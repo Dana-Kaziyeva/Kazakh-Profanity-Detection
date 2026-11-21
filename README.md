@@ -67,10 +67,21 @@ artifacts/
   trace_example.txt          end-to-end tokenisation trace
 ```
 
-**Model access.** `artifacts/model/` (651 MB: `model.safetensors`, tokenizer files, `model_meta.json`) is produced by
-`python src/04_train.py --stage final` and is **git-ignored** (local-only by choice). Everything needed for inference
-is inside that folder — no retraining required. To publish it, zip the folder and attach it to a GitHub release, or
-`git lfs track "artifacts/model/*"` before committing.
+**Model access.** The trained model is published as a GitHub Release asset:
+**<https://github.com/Dana-Kaziyeva/Kazakh-Profanity-Detection/releases/tag/model-v1.0.0>**
+(zip: `kazakh-profanity-model-v1.0.0.zip`, 651 MB: `model.safetensors`, tokenizer files, `model_meta.json`).
+It is too large for the git tree (GitHub blocks files > 100 MB), so `artifacts/model/` is git-ignored.
+To use the model **without retraining**:
+
+```bash
+# download and unpack the model into artifacts/model/
+curl -L -o model.zip https://github.com/Dana-Kaziyeva/Kazakh-Profanity-Detection/releases/download/model-v1.0.0/kazakh-profanity-model-v1.0.0.zip
+tar -xf model.zip -C artifacts/model      # or any unzip tool, unpack into artifacts/model/
+python -m src.predict "Бұл телефон сік, ақшамды қайтарыңдар"
+```
+
+Everything needed for inference is inside that folder — no retraining required. The model is regenerated
+deterministically by `python src/04_train.py --stage final` (seed 42).
 
 **All artefacts are regenerated deterministically** by the five numbered scripts in order, with `seed: 42`.
 
@@ -499,7 +510,7 @@ usernames are stripped before training (§3.5).
 | long comments / punctuation / unknown tokens | §4 + §6.6 (truncation 5.65 %, `[UNK]` probe) |
 | settings, seed, dependencies recorded | `config.yaml`, `requirements.txt`, `artifacts/training_summary.json` |
 | validation-based selection + threshold | §5 (grid table) + §6.2 (threshold sweep) |
-| trainable model saved / no-retraining inference | `artifacts/model/`, §7 |
+| trainable model saved / no-retraining inference | GitHub Release `model-v1.0.0` (zip → `artifacts/model/`), §2 + §7 |
 | one evaluation on held-out test | §6.1 (867 examples, P/R/F1, confusion matrix) |
 | FP/FN meaning for moderation | §6.1 |
 | ≥3 mistakes analysed with fixes | §6.5 (6 categories, all 11 errors inspected) |
