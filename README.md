@@ -305,8 +305,9 @@ The model was retrained **after the manual label corrections** (§10.1b) and eva
 
 **How to read a perfect test score.** The labels come from the same annotation protocol the model can learn
 (the lexicon + language rule), and the test split is class-balanced with ~49 % synthetic rows. The test set is
-therefore an *upper bound*, not an estimate of production quality: 9 of the 11 errors of the previous model were
-label noise that the human review removed (§6.5). The honest generalisation checks are the boundary probes below
+therefore an *upper bound*, not an estimate of production quality: **4 of the 11 errors of the round-1 model were
+label noise** that the human review removed, the other 7 were genuine, and the retrained model fixed 4 of those 7
+(§6.8). The honest generalisation checks are the boundary probes below
 and the external evaluation on never-seen domains (§10.2: 2 false positives in 530 comments, FPR 0.38 %).
 
 **What the errors would mean for moderation** (none occurred on this test set):
@@ -362,18 +363,23 @@ comment, including the masked and mixed-language ones.
 
 ### 6.5 Error analysis
 
-**After the corrections the retrained model makes no test errors.** The errors of the previous round (11 in total)
-remain the best material for understanding what is hard here — nine of them were **label noise**:
+**The retrained model makes no errors on the current test split.** The 11 errors of the round-1 model are still the
+best material for understanding what is hard here — but only **4 of them were label noise**; the remaining 7 were
+genuine model errors, and 4 of those are now fixed (§6.8):
 
 1. **False negative caused by a label error** — `Качество ткани … сшили по бокам …`: the Russian phrase *по бокам*
-   matched the Kazakh root `бок`. The model said `0`, the annotation said `1`; the human review fixed the label.
-2. **Three mislabelled Kazakh phrases** — `Шешен амын сыгейн`, `Шешенды сыгем`, `Бок же` were labelled `0` only
-   because `detect_lang` saw no Kazakh-specific letters; the model scored them 0.98–0.9999. Labels corrected to `1`.
-3. **Proper nouns / nicknames** — `Бокеевской Орде`, `Белобока`, `«Сігео»` matched short roots inside names.
-   Labels corrected to `0`.
+   matched the Kazakh root `бок`. The model said `0`, the annotation said `1`; the human review fixed the label
+   to `0`, so this was not a model mistake at all.
+2. **Three false positives that were label errors** — `Шешенды амын сыгем`, `Шешенды сыгем`, `Шешен амын сыгейн`
+   were labelled `0` only because `detect_lang` saw no Kazakh-specific letters; the model scored them 0.9998.
+   The reviewer confirmed they are Kazakh profanity, so the labels became `1` and the "errors" disappear.
+3. **Proper nouns / nicknames outside the test set** — `Бокеевской Орде`, `Белобока`, `«Сігео»` matched short roots
+   inside names. These were training/validation label errors; labels corrected to `0`.
 4. **Russian profanity inside Kazakh frames** (`заалупа`, `муудак`, `иди на хуй пидор …`) — these stay `0` by the
-   mixed-language rule. The previous model got 5/66 of them wrong (it keyed on the profanity token instead of the
-   language); after retraining: **0/64** errors on this probe.
+   mixed-language rule. Round 1 got **4 / 66** of them wrong (it keyed on the profanity token instead of the
+   language); after retraining: **0 / 64** errors on this probe. A residual case, `суши ш***а, сапасы нашар.`
+   (masked Russian profanity in a Kazakh frame), is still flagged when re-scored — it simply is not part of the
+   current split any more (§6.8).
 5. **External false positives (new domains, §10.2)** — with the retrained model only **2 of 530**:
    a military-qualification paragraph (p=0.857) and `Сайлау қорытындысы таластырылуда.` (p=0.677, "the election
    results are being disputed"). Neither contains profanity and neither matches the lexicon, so these are pure
@@ -404,6 +410,52 @@ threshold : 0.30  ->  prediction = 1   (true label = 1)
 
 The mixed Kazakh/Russian frame is tokenised without unknowns; the Kazakh profanity `амың` is split into
 `ам | ##ың` and still recognised.
+
+### 6.8 Round 1 (before the review) vs round 2 (after the 14 label fixes)
+
+Same base model, same settings, same seed — only the labels changed (14 rows) and the deterministic re-split that
+follows from them.
+
+| | round 1 | round 2 (published) |
+|---|---|---|
+| training rows (class-balanced) | 2,435 | 2,439 |
+| lr / max_len / epochs | 5e-5 / 96 / 2 | 5e-5 / 96 / 2 |
+| CPU training time | 45 min | 65 min |
+| validation F1 (threshold chosen on val) | 0.9902 @ 0.40 | 0.9882 @ 0.30 |
+| **test P / R / F1** | **0.962 / 0.9961 / 0.9787** | **1.000 / 1.000 / 1.000** |
+| test errors | 10 FP + 1 FN | 0 |
+| **external FPR (same 530 rows)** | **4 / 530 = 0.75 %** | **2 / 530 = 0.38 %** |
+| RU hard negatives, synthetic KK frame | 4 / 66 wrong | 0 / 64 |
+| real Kazakh reviews labelled 0 | 2 / 23 wrong | 0 / 32 |
+| masked RU profanity in KK frame (`заалупа`, `м***к`) | 3 of 3 FP | 0 of 3 FP (re-scored) |
+
+**The two test scores are not measured on the same rows.** Changing 14 labels changes the stratified re-split, so the
+round-1 and round-2 test samples are not the same rows: of the 11 round-1 errors only `r000041` is still in the test
+split. The external 530-row set is the only row-identical comparison, and it is the number to trust for
+generalisation.
+
+**Re-scoring all 11 round-1 test errors with the published model** (`true` = human-reviewed label, §10.1b):
+
+| id | round-1 label | round-1 pred | now | P(prof) | verdict |
+|---|---|---|---|---|---|
+| `r000471` | 1 | 0 | 0 | 0.0005 | label noise — reviewer changed the label to 0 |
+| `r002918` | 0 | 1 | 1 | 0.9998 | label noise — reviewer changed the label to 1 |
+| `r002919` | 0 | 1 | 1 | 0.9998 | label noise — reviewer changed the label to 1 |
+| `r002920` | 0 | 1 | 1 | 0.9998 | label noise — reviewer changed the label to 1 |
+| `r000041` | 0 | 1 | **0** | 0.0066 | genuine error, **fixed** |
+| `r005165` | 0 | 1 | **0** | 0.0009 | genuine error, **fixed** (`заалупа` in KK frame) |
+| `r005092` | 0 | 1 | **0** | 0.0186 | genuine error, **fixed** (`м***к` in KK frame) |
+| `r005079` | 0 | 1 | **0** | 0.0005 | genuine error, **fixed** (`заалупа` in KK frame) |
+| `r005224` | 0 | 1 | 1 | 0.9992 | genuine error, **still wrong** (masked RU `ш***а` in KK frame) |
+| `r002735` | 0 | 1 | 1 | 0.9854 | genuine error, **still wrong** (clean proverb-like text) |
+| `r000006` | 0 | 1 | 1 | 0.9982 | genuine error, **still wrong** (positive review) |
+
+Net effect: **4 label-noise rows left the error list, 4 real errors were fixed, 3 real errors persist** — but those
+three rows are no longer in the test split, so the 1.000 test score does not hide them; they are stated here
+explicitly. Summary: the 0.9787 → 1.0000 jump is roughly **half label correction, half real improvement**; the
+independent evidence of real improvement is the external FPR (0.75 % → 0.38 %), the language-boundary probe
+(4/66 → 0/64) and the current behaviour on the README probe `пиздец, доставка опять задержалась`
+(p=0.0009 → `0`), which the round-1 checkpoint answered as profanity.
 
 ## 7. Prediction on new comments (no retraining)
 
@@ -503,7 +555,7 @@ usernames are stripped before training (§3.5).
 | trainable model saved / no-retraining inference | GitHub Release `model-v1.1.0` (zip → `artifacts/model/`), §2 + §7 |
 | one evaluation on held-out test | §6.1 (867 examples, P/R/F1, confusion matrix) |
 | FP/FN meaning for moderation | §6.1 |
-| ≥3 mistakes analysed with fixes | §6.5 (previous round: all 11 errors inspected, 9 were label noise fixed in §10.1b) |
+| ≥3 mistakes analysed with fixes | §6.5 (11 round-1 errors: 4 label noise, 4 fixed, 3 persisting) + §6.8 (round-1 vs round-2) |
 | trace one comment end-to-end | §6.7 (`artifacts/trace_example.txt`) |
 | limitations | §8 |
 
