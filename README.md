@@ -455,7 +455,7 @@ Inference speed on this CPU: ~50 ms for one comment, ~150 ms/comment in batches 
 * **Single visible-letter masks** (`с***`) are ambiguous and were deliberately not matched; the model may or may
   not generalise to them.
 * **Real review positives are scarce.** None of the 186 unique real Kazakh reviews contained Kazakh profanity; real
-  positives come from Telegram chat (different register), and 88.6 % of test positives are synthetic. The
+  positives come from Telegram chat (different register), and 88.2 % of test positives are synthetic. The
   per-subset metrics in §6 quantify this gap honestly instead of hiding it behind one aggregate F1.
 * **Prevalence shift.** The test set is ~29 % profane; a production review stream is far below 1 %. At that
   prevalence the same model has much lower precision — threshold and calibration must be re-tuned per deployment.
@@ -489,7 +489,7 @@ usernames are stripped before training (§3.5).
 | data sources, access, sizes, licences | §3.1 (`src/01_download_data.py`, `data/raw/MANIFEST.json` with urls + sha256) |
 | relation to Kazakh product reviews | §3.1 |
 | labelling method + rules (mixed language, masked, variants, ambiguous, negative≠profane) | §3.2–3.3 (`data/lexicon.json`, `src/02_build_lexicon.py`) |
-| existing labels checked and revised | §3.2 (sentiment discarded; Russian-origin swear-words relabelled; RU toxic relabelled 0) |
+| existing labels checked and revised | §3.2 (sentiment discarded; Russian-origin swear-words relabelled; RU toxic relabelled 0) + §10.1/§10.1b (human review, 14 corrections) |
 | synthetic examples clearly identified | §3.4 (`synthetic`/`template_id` columns, 2,846 rows) |
 | labelled examples | §3.3 table + `data/processed/audit_*.csv` |
 | no personal data | §3.5 (538 PII substitutions, 0 remaining) |
