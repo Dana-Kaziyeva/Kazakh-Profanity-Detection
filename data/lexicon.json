@@ -1,0 +1,4375 @@
+{
+  "version": 1,
+  "created": "2026-11-20T18:45:51.048372+00:00",
+  "description": "Annotation lexicon for the Kazakh profanity task. Contains profanity - required to reproduce the labels.",
+  "entries": [
+    {
+      "id": "kk_kotaq",
+      "lang": "kk",
+      "root": "қотақ",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "қотағы",
+        "қотағым",
+        "қотағың",
+        "қотағын",
+        "қотақбас",
+        "қотақпас",
+        "қотақты",
+        "қотақтар"
+      ],
+      "insert_forms": [
+        "қотақ",
+        "қотағы",
+        "қотақбас",
+        "қотағың"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_sik",
+      "lang": "kk",
+      "root": "сік",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "сігу",
+        "сікті",
+        "сікпейді",
+        "сікпе",
+        "сик",
+        "сык"
+      ],
+      "insert_forms": [
+        "сік",
+        "сігу",
+        "сікпейді"
+      ],
+      "exceptions": [
+        "сікір",
+        "сіксіз",
+        "сіккіш"
+      ],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_sig",
+      "lang": "kk",
+      "root": "сіг",
+      "severity": "severe",
+      "category": "offensive",
+      "surfaces": [
+        "сігем",
+        "сігіл",
+        "сігема",
+        "сігейін",
+        "сігейн",
+        "сігеді",
+        "сігесің",
+        "сігіп",
+        "сігер",
+        "сыгем",
+        "сыгейн"
+      ],
+      "insert_forms": [
+        "сігейін",
+        "сігем",
+        "сігіл"
+      ],
+      "exceptions": [
+        "сігір"
+      ],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_am",
+      "lang": "kk",
+      "root": "ам",
+      "severity": "severe",
+      "category": "vulgar",
+      "exact": true,
+      "surfaces": [
+        "амы",
+        "амың",
+        "амын",
+        "амды",
+        "амға",
+        "амда",
+        "амнан",
+        "амның",
+        "амдар",
+        "амым",
+        "амына",
+        "амынды",
+        "амбас",
+        "амшық",
+        "амщелек"
+      ],
+      "insert_forms": [
+        "ам",
+        "амың",
+        "амын"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_ambas",
+      "lang": "kk",
+      "root": "амбас",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "амбас",
+        "амбасты",
+        "амбассың"
+      ],
+      "insert_forms": [
+        "амбас"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_amshyq",
+      "lang": "kk",
+      "root": "амшық",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "амшық",
+        "амшықтар"
+      ],
+      "insert_forms": [
+        "амшық"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_amshelek",
+      "lang": "kk",
+      "root": "амщелек",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "амщелек"
+      ],
+      "insert_forms": [
+        "амщелек"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_kot",
+      "lang": "kk",
+      "root": "көт",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "көті",
+        "көтің",
+        "көтіңді",
+        "көтім",
+        "көтін",
+        "көтке",
+        "көттер",
+        "котин",
+        "котын",
+        "коты"
+      ],
+      "insert_forms": [
+        "көт",
+        "көтің",
+        "көтіңді",
+        "көтім"
+      ],
+      "exceptions": [
+        "көтер",
+        "көтерме",
+        "көтеріл",
+        "көтерлік"
+      ],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_boq",
+      "lang": "kk",
+      "root": "бок",
+      "severity": "moderate",
+      "category": "vulgar",
+      "surfaces": [
+        "бок",
+        "богы",
+        "бокқа",
+        "боктан",
+        "бокты"
+      ],
+      "insert_forms": [
+        "бок"
+      ],
+      "exceptions": [
+        "бокс",
+        "боксер",
+        "боксты"
+      ],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_zhalep",
+      "lang": "kk",
+      "root": "жәлеп",
+      "severity": "severe",
+      "category": "offensive",
+      "surfaces": [
+        "жәлептер",
+        "жәлепсің"
+      ],
+      "insert_forms": [
+        "жәлеп"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_qanshyq",
+      "lang": "kk",
+      "root": "қаншық",
+      "severity": "severe",
+      "category": "insult",
+      "surfaces": [
+        "қаншықтар",
+        "каншык",
+        "каншыктар"
+      ],
+      "insert_forms": [
+        "қаншық",
+        "каншык"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_tasaq",
+      "lang": "kk",
+      "root": "тасақ",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "тасақ",
+        "тасағы"
+      ],
+      "insert_forms": [
+        "тасақ"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_saldaqy",
+      "lang": "kk",
+      "root": "салдақы",
+      "severity": "moderate",
+      "category": "insult",
+      "surfaces": [
+        "салдақы",
+        "салдакы",
+        "салдақылар"
+      ],
+      "insert_forms": [
+        "салдақы"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified)"
+    },
+    {
+      "id": "kk_shshs",
+      "lang": "kk",
+      "root": "шшс",
+      "severity": "severe",
+      "category": "offensive",
+      "exact": true,
+      "surfaces": [
+        "шшс"
+      ],
+      "insert_forms": [
+        "шшс"
+      ],
+      "exceptions": [],
+      "source": "Rustem-Kaimolla/kazakh-swear-words (MIT, manually verified) (abbreviation of a profane phrase)"
+    },
+    {
+      "id": "ru_khui",
+      "lang": "ru",
+      "root": "хуй",
+      "severity": "severe",
+      "category": "vulgar",
+      "infix": true,
+      "surfaces": [
+        "хуя",
+        "хуе",
+        "хуё",
+        "хуи",
+        "хуйн",
+        "хуйня"
+      ],
+      "insert_forms": [
+        "хуй",
+        "хуйня",
+        "нахуй"
+      ],
+      "exceptions": [],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_pizd",
+      "lang": "ru",
+      "root": "пизд",
+      "severity": "severe",
+      "category": "vulgar",
+      "infix": true,
+      "surfaces": [
+        "пизда",
+        "пиздец",
+        "пизде"
+      ],
+      "insert_forms": [
+        "пиздец",
+        "пизда"
+      ],
+      "exceptions": [],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_blyad",
+      "lang": "ru",
+      "root": "бляд",
+      "severity": "severe",
+      "category": "vulgar",
+      "infix": true,
+      "surfaces": [
+        "блядь",
+        "бляди",
+        "блять",
+        "бля"
+      ],
+      "insert_forms": [
+        "блядь",
+        "бля"
+      ],
+      "exceptions": [],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_eb",
+      "lang": "ru",
+      "root": "еб",
+      "severity": "severe",
+      "category": "vulgar",
+      "infix": true,
+      "surfaces": [
+        "ебать",
+        "ебал",
+        "еблан",
+        "заебал",
+        "уебал",
+        "долбоеб",
+        "ёб",
+        "ёбнутый",
+        "ёбаный"
+      ],
+      "insert_forms": [
+        "ебать",
+        "заебал",
+        "долбоеб",
+        "ёб"
+      ],
+      "exceptions": [
+        "себе",
+        "тебе",
+        "хлеб",
+        "неб",
+        "греб",
+        "погреб",
+        "требу",
+        "колеб",
+        "учеб",
+        "жреб",
+        "лебед",
+        "стеб",
+        "потреб",
+        "употреб",
+        "себ",
+        "теб",
+        "хреб",
+        "волшеб",
+        "реб",
+        "веб",
+        "серебр"
+      ],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_suk",
+      "lang": "ru",
+      "root": "сук",
+      "severity": "severe",
+      "category": "insult",
+      "surfaces": [
+        "сука",
+        "суки",
+        "сукин",
+        "сукой",
+        "суке"
+      ],
+      "insert_forms": [
+        "сука",
+        "суки"
+      ],
+      "exceptions": [
+        "сукно",
+        "сукцесс",
+        "суккул",
+        "сукре"
+      ],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_mud",
+      "lang": "ru",
+      "root": "муд",
+      "severity": "severe",
+      "category": "insult",
+      "surfaces": [
+        "мудак",
+        "мудила",
+        "мудозвон"
+      ],
+      "insert_forms": [
+        "мудак",
+        "мудила"
+      ],
+      "exceptions": [
+        "мудр",
+        "мудрец",
+        "мудрос"
+      ],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_zalup",
+      "lang": "ru",
+      "root": "залуп",
+      "severity": "severe",
+      "category": "vulgar",
+      "surfaces": [
+        "залупа",
+        "залупу"
+      ],
+      "insert_forms": [
+        "залупа"
+      ],
+      "exceptions": [],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_gandon",
+      "lang": "ru",
+      "root": "гандон",
+      "severity": "severe",
+      "category": "insult",
+      "surfaces": [
+        "гандон",
+        "гондон"
+      ],
+      "insert_forms": [
+        "гандон"
+      ],
+      "exceptions": [],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_pidor",
+      "lang": "ru",
+      "root": "пидор",
+      "severity": "severe",
+      "category": "insult",
+      "surfaces": [
+        "пидор",
+        "пидар",
+        "пидорас"
+      ],
+      "insert_forms": [
+        "пидор"
+      ],
+      "exceptions": [],
+      "source": "manual curation"
+    },
+    {
+      "id": "ru_shlyukh",
+      "lang": "ru",
+      "root": "шлюх",
+      "severity": "severe",
+      "category": "insult",
+      "surfaces": [
+        "шлюха",
+        "шлюхи"
+      ],
+      "insert_forms": [
+        "шлюха"
+      ],
+      "exceptions": [],
+      "source": "manual curation"
+    },
+    {
+      "id": "en_acrotomophilia",
+      "lang": "en",
+      "root": "acrotomophilia",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "acrotomophilia"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_anal",
+      "lang": "en",
+      "root": "anal",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "anal"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_anilingus",
+      "lang": "en",
+      "root": "anilingus",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "anilingus"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_anus",
+      "lang": "en",
+      "root": "anus",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "anus"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_apeshit",
+      "lang": "en",
+      "root": "apeshit",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "apeshit"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_arsehole",
+      "lang": "en",
+      "root": "arsehole",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "arsehole"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_ass",
+      "lang": "en",
+      "root": "ass",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "ass"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_asshole",
+      "lang": "en",
+      "root": "asshole",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "asshole"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_assmunch",
+      "lang": "en",
+      "root": "assmunch",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "assmunch"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_autoerotic",
+      "lang": "en",
+      "root": "autoerotic",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "autoerotic"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_babeland",
+      "lang": "en",
+      "root": "babeland",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "babeland"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bangbros",
+      "lang": "en",
+      "root": "bangbros",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bangbros"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bangbus",
+      "lang": "en",
+      "root": "bangbus",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bangbus"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bareback",
+      "lang": "en",
+      "root": "bareback",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bareback"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_barenaked",
+      "lang": "en",
+      "root": "barenaked",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "barenaked"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bastard",
+      "lang": "en",
+      "root": "bastard",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bastard"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bastardo",
+      "lang": "en",
+      "root": "bastardo",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bastardo"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bastinado",
+      "lang": "en",
+      "root": "bastinado",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bastinado"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bbw",
+      "lang": "en",
+      "root": "bbw",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bbw"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bdsm",
+      "lang": "en",
+      "root": "bdsm",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bdsm"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_beaner",
+      "lang": "en",
+      "root": "beaner",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "beaner"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_beaners",
+      "lang": "en",
+      "root": "beaners",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "beaners"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_beastiality",
+      "lang": "en",
+      "root": "beastiality",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "beastiality"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bestiality",
+      "lang": "en",
+      "root": "bestiality",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bestiality"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bimbos",
+      "lang": "en",
+      "root": "bimbos",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bimbos"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_birdlock",
+      "lang": "en",
+      "root": "birdlock",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "birdlock"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bitch",
+      "lang": "en",
+      "root": "bitch",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bitch"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bitches",
+      "lang": "en",
+      "root": "bitches",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bitches"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_blowjob",
+      "lang": "en",
+      "root": "blowjob",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "blowjob"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_blumpkin",
+      "lang": "en",
+      "root": "blumpkin",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "blumpkin"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bollocks",
+      "lang": "en",
+      "root": "bollocks",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bollocks"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bondage",
+      "lang": "en",
+      "root": "bondage",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bondage"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_boner",
+      "lang": "en",
+      "root": "boner",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "boner"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_boob",
+      "lang": "en",
+      "root": "boob",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "boob"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_boobs",
+      "lang": "en",
+      "root": "boobs",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "boobs"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bukkake",
+      "lang": "en",
+      "root": "bukkake",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bukkake"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bulldyke",
+      "lang": "en",
+      "root": "bulldyke",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bulldyke"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bullshit",
+      "lang": "en",
+      "root": "bullshit",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bullshit"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_bunghole",
+      "lang": "en",
+      "root": "bunghole",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "bunghole"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_busty",
+      "lang": "en",
+      "root": "busty",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "busty"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_butt",
+      "lang": "en",
+      "root": "butt",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "butt"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_buttcheeks",
+      "lang": "en",
+      "root": "buttcheeks",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "buttcheeks"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_butthole",
+      "lang": "en",
+      "root": "butthole",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "butthole"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_camgirl",
+      "lang": "en",
+      "root": "camgirl",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "camgirl"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_camslut",
+      "lang": "en",
+      "root": "camslut",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "camslut"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_camwhore",
+      "lang": "en",
+      "root": "camwhore",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "camwhore"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_carpetmuncher",
+      "lang": "en",
+      "root": "carpetmuncher",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "carpetmuncher"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cialis",
+      "lang": "en",
+      "root": "cialis",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cialis"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_circlejerk",
+      "lang": "en",
+      "root": "circlejerk",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "circlejerk"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_clit",
+      "lang": "en",
+      "root": "clit",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "clit"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_clitoris",
+      "lang": "en",
+      "root": "clitoris",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "clitoris"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_clusterfuck",
+      "lang": "en",
+      "root": "clusterfuck",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "clusterfuck"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cock",
+      "lang": "en",
+      "root": "cock",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cock"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cocks",
+      "lang": "en",
+      "root": "cocks",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cocks"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_coon",
+      "lang": "en",
+      "root": "coon",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "coon"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_coons",
+      "lang": "en",
+      "root": "coons",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "coons"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_coprolagnia",
+      "lang": "en",
+      "root": "coprolagnia",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "coprolagnia"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_coprophilia",
+      "lang": "en",
+      "root": "coprophilia",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "coprophilia"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cornhole",
+      "lang": "en",
+      "root": "cornhole",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cornhole"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_creampie",
+      "lang": "en",
+      "root": "creampie",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "creampie"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cum",
+      "lang": "en",
+      "root": "cum",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cum"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cumming",
+      "lang": "en",
+      "root": "cumming",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cumming"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cumshot",
+      "lang": "en",
+      "root": "cumshot",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cumshot"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cumshots",
+      "lang": "en",
+      "root": "cumshots",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cumshots"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cunnilingus",
+      "lang": "en",
+      "root": "cunnilingus",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cunnilingus"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_cunt",
+      "lang": "en",
+      "root": "cunt",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "cunt"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_darkie",
+      "lang": "en",
+      "root": "darkie",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "darkie"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_daterape",
+      "lang": "en",
+      "root": "daterape",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "daterape"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_deepthroat",
+      "lang": "en",
+      "root": "deepthroat",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "deepthroat"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dendrophilia",
+      "lang": "en",
+      "root": "dendrophilia",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dendrophilia"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dick",
+      "lang": "en",
+      "root": "dick",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dick"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dildo",
+      "lang": "en",
+      "root": "dildo",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dildo"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dingleberries",
+      "lang": "en",
+      "root": "dingleberries",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dingleberries"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dingleberry",
+      "lang": "en",
+      "root": "dingleberry",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dingleberry"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_doggiestyle",
+      "lang": "en",
+      "root": "doggiestyle",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "doggiestyle"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_doggystyle",
+      "lang": "en",
+      "root": "doggystyle",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "doggystyle"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dolcett",
+      "lang": "en",
+      "root": "dolcett",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dolcett"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_domination",
+      "lang": "en",
+      "root": "domination",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "domination"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dominatrix",
+      "lang": "en",
+      "root": "dominatrix",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dominatrix"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dommes",
+      "lang": "en",
+      "root": "dommes",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dommes"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_dvda",
+      "lang": "en",
+      "root": "dvda",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "dvda"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_ecchi",
+      "lang": "en",
+      "root": "ecchi",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "ecchi"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_ejaculation",
+      "lang": "en",
+      "root": "ejaculation",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "ejaculation"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_erotic",
+      "lang": "en",
+      "root": "erotic",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "erotic"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_erotism",
+      "lang": "en",
+      "root": "erotism",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "erotism"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_escort",
+      "lang": "en",
+      "root": "escort",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "escort"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_eunuch",
+      "lang": "en",
+      "root": "eunuch",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "eunuch"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fag",
+      "lang": "en",
+      "root": "fag",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fag"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_faggot",
+      "lang": "en",
+      "root": "faggot",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "faggot"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fecal",
+      "lang": "en",
+      "root": "fecal",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fecal"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_felch",
+      "lang": "en",
+      "root": "felch",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "felch"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fellatio",
+      "lang": "en",
+      "root": "fellatio",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fellatio"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_feltch",
+      "lang": "en",
+      "root": "feltch",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "feltch"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_femdom",
+      "lang": "en",
+      "root": "femdom",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "femdom"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_figging",
+      "lang": "en",
+      "root": "figging",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "figging"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fingerbang",
+      "lang": "en",
+      "root": "fingerbang",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fingerbang"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fingering",
+      "lang": "en",
+      "root": "fingering",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fingering"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fisting",
+      "lang": "en",
+      "root": "fisting",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fisting"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_footjob",
+      "lang": "en",
+      "root": "footjob",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "footjob"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_frotting",
+      "lang": "en",
+      "root": "frotting",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "frotting"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fuck",
+      "lang": "en",
+      "root": "fuck",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fuck"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fuckin",
+      "lang": "en",
+      "root": "fuckin",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fuckin"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fucking",
+      "lang": "en",
+      "root": "fucking",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fucking"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fucktards",
+      "lang": "en",
+      "root": "fucktards",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fucktards"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_fudgepacker",
+      "lang": "en",
+      "root": "fudgepacker",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "fudgepacker"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_futanari",
+      "lang": "en",
+      "root": "futanari",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "futanari"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_gangbang",
+      "lang": "en",
+      "root": "gangbang",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "gangbang"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_genitals",
+      "lang": "en",
+      "root": "genitals",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "genitals"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_goatcx",
+      "lang": "en",
+      "root": "goatcx",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "goatcx"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_goatse",
+      "lang": "en",
+      "root": "goatse",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "goatse"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_gokkun",
+      "lang": "en",
+      "root": "gokkun",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "gokkun"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_goodpoop",
+      "lang": "en",
+      "root": "goodpoop",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "goodpoop"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_goregasm",
+      "lang": "en",
+      "root": "goregasm",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "goregasm"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_grope",
+      "lang": "en",
+      "root": "grope",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "grope"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_guro",
+      "lang": "en",
+      "root": "guro",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "guro"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_handjob",
+      "lang": "en",
+      "root": "handjob",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "handjob"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_hardcore",
+      "lang": "en",
+      "root": "hardcore",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "hardcore"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_hentai",
+      "lang": "en",
+      "root": "hentai",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "hentai"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_homoerotic",
+      "lang": "en",
+      "root": "homoerotic",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "homoerotic"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_honkey",
+      "lang": "en",
+      "root": "honkey",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "honkey"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_hooker",
+      "lang": "en",
+      "root": "hooker",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "hooker"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_horny",
+      "lang": "en",
+      "root": "horny",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "horny"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_humping",
+      "lang": "en",
+      "root": "humping",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "humping"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_incest",
+      "lang": "en",
+      "root": "incest",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "incest"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_intercourse",
+      "lang": "en",
+      "root": "intercourse",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "intercourse"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_jailbait",
+      "lang": "en",
+      "root": "jailbait",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "jailbait"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_jigaboo",
+      "lang": "en",
+      "root": "jigaboo",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "jigaboo"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_jiggaboo",
+      "lang": "en",
+      "root": "jiggaboo",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "jiggaboo"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_jiggerboo",
+      "lang": "en",
+      "root": "jiggerboo",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "jiggerboo"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_jizz",
+      "lang": "en",
+      "root": "jizz",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "jizz"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_juggs",
+      "lang": "en",
+      "root": "juggs",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "juggs"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_kike",
+      "lang": "en",
+      "root": "kike",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "kike"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_kinbaku",
+      "lang": "en",
+      "root": "kinbaku",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "kinbaku"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_kinkster",
+      "lang": "en",
+      "root": "kinkster",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "kinkster"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_kinky",
+      "lang": "en",
+      "root": "kinky",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "kinky"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_knobbing",
+      "lang": "en",
+      "root": "knobbing",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "knobbing"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_livesex",
+      "lang": "en",
+      "root": "livesex",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "livesex"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_lolita",
+      "lang": "en",
+      "root": "lolita",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "lolita"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_lovemaking",
+      "lang": "en",
+      "root": "lovemaking",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "lovemaking"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_masturbate",
+      "lang": "en",
+      "root": "masturbate",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "masturbate"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_masturbating",
+      "lang": "en",
+      "root": "masturbating",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "masturbating"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_masturbation",
+      "lang": "en",
+      "root": "masturbation",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "masturbation"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_milf",
+      "lang": "en",
+      "root": "milf",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "milf"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_mong",
+      "lang": "en",
+      "root": "mong",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "mong"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_motherfucker",
+      "lang": "en",
+      "root": "motherfucker",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "motherfucker"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_muffdiving",
+      "lang": "en",
+      "root": "muffdiving",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "muffdiving"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nambla",
+      "lang": "en",
+      "root": "nambla",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nambla"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nawashi",
+      "lang": "en",
+      "root": "nawashi",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nawashi"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_negro",
+      "lang": "en",
+      "root": "negro",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "negro"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_neonazi",
+      "lang": "en",
+      "root": "neonazi",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "neonazi"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nigga",
+      "lang": "en",
+      "root": "nigga",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nigga"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nigger",
+      "lang": "en",
+      "root": "nigger",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nigger"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nimphomania",
+      "lang": "en",
+      "root": "nimphomania",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nimphomania"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nipple",
+      "lang": "en",
+      "root": "nipple",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nipple"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nipples",
+      "lang": "en",
+      "root": "nipples",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nipples"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nsfw",
+      "lang": "en",
+      "root": "nsfw",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nsfw"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nude",
+      "lang": "en",
+      "root": "nude",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nude"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nudity",
+      "lang": "en",
+      "root": "nudity",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nudity"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nutten",
+      "lang": "en",
+      "root": "nutten",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nutten"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nympho",
+      "lang": "en",
+      "root": "nympho",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nympho"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_nymphomania",
+      "lang": "en",
+      "root": "nymphomania",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "nymphomania"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_octopussy",
+      "lang": "en",
+      "root": "octopussy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "octopussy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_omorashi",
+      "lang": "en",
+      "root": "omorashi",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "omorashi"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_orgasm",
+      "lang": "en",
+      "root": "orgasm",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "orgasm"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_orgy",
+      "lang": "en",
+      "root": "orgy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "orgy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_paedophile",
+      "lang": "en",
+      "root": "paedophile",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "paedophile"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_paki",
+      "lang": "en",
+      "root": "paki",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "paki"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_panties",
+      "lang": "en",
+      "root": "panties",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "panties"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_panty",
+      "lang": "en",
+      "root": "panty",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "panty"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pedobear",
+      "lang": "en",
+      "root": "pedobear",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pedobear"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pedophile",
+      "lang": "en",
+      "root": "pedophile",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pedophile"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pegging",
+      "lang": "en",
+      "root": "pegging",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pegging"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_penis",
+      "lang": "en",
+      "root": "penis",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "penis"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pikey",
+      "lang": "en",
+      "root": "pikey",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pikey"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pissing",
+      "lang": "en",
+      "root": "pissing",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pissing"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pisspig",
+      "lang": "en",
+      "root": "pisspig",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pisspig"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_playboy",
+      "lang": "en",
+      "root": "playboy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "playboy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_ponyplay",
+      "lang": "en",
+      "root": "ponyplay",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "ponyplay"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_poof",
+      "lang": "en",
+      "root": "poof",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "poof"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_poon",
+      "lang": "en",
+      "root": "poon",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "poon"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_poontang",
+      "lang": "en",
+      "root": "poontang",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "poontang"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_poopchute",
+      "lang": "en",
+      "root": "poopchute",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "poopchute"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_porn",
+      "lang": "en",
+      "root": "porn",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "porn"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_porno",
+      "lang": "en",
+      "root": "porno",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "porno"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pornography",
+      "lang": "en",
+      "root": "pornography",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pornography"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pthc",
+      "lang": "en",
+      "root": "pthc",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pthc"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pubes",
+      "lang": "en",
+      "root": "pubes",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pubes"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_punany",
+      "lang": "en",
+      "root": "punany",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "punany"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_pussy",
+      "lang": "en",
+      "root": "pussy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "pussy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_queaf",
+      "lang": "en",
+      "root": "queaf",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "queaf"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_queef",
+      "lang": "en",
+      "root": "queef",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "queef"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_quim",
+      "lang": "en",
+      "root": "quim",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "quim"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_raghead",
+      "lang": "en",
+      "root": "raghead",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "raghead"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_rape",
+      "lang": "en",
+      "root": "rape",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "rape"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_raping",
+      "lang": "en",
+      "root": "raping",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "raping"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_rapist",
+      "lang": "en",
+      "root": "rapist",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "rapist"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_rectum",
+      "lang": "en",
+      "root": "rectum",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "rectum"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_rimjob",
+      "lang": "en",
+      "root": "rimjob",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "rimjob"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_rimming",
+      "lang": "en",
+      "root": "rimming",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "rimming"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sadism",
+      "lang": "en",
+      "root": "sadism",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sadism"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_santorum",
+      "lang": "en",
+      "root": "santorum",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "santorum"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_scat",
+      "lang": "en",
+      "root": "scat",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "scat"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_schlong",
+      "lang": "en",
+      "root": "schlong",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "schlong"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_scissoring",
+      "lang": "en",
+      "root": "scissoring",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "scissoring"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_semen",
+      "lang": "en",
+      "root": "semen",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "semen"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sex",
+      "lang": "en",
+      "root": "sex",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sex"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sexcam",
+      "lang": "en",
+      "root": "sexcam",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sexcam"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sexo",
+      "lang": "en",
+      "root": "sexo",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sexo"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sexual",
+      "lang": "en",
+      "root": "sexual",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sexual"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sexuality",
+      "lang": "en",
+      "root": "sexuality",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sexuality"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sexually",
+      "lang": "en",
+      "root": "sexually",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sexually"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sexy",
+      "lang": "en",
+      "root": "sexy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sexy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_shemale",
+      "lang": "en",
+      "root": "shemale",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "shemale"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_shibari",
+      "lang": "en",
+      "root": "shibari",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "shibari"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_shit",
+      "lang": "en",
+      "root": "shit",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "shit"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_shitblimp",
+      "lang": "en",
+      "root": "shitblimp",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "shitblimp"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_shitty",
+      "lang": "en",
+      "root": "shitty",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "shitty"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_shota",
+      "lang": "en",
+      "root": "shota",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "shota"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_shrimping",
+      "lang": "en",
+      "root": "shrimping",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "shrimping"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_skeet",
+      "lang": "en",
+      "root": "skeet",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "skeet"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_slanteye",
+      "lang": "en",
+      "root": "slanteye",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "slanteye"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_slut",
+      "lang": "en",
+      "root": "slut",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "slut"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_smut",
+      "lang": "en",
+      "root": "smut",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "smut"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_snatch",
+      "lang": "en",
+      "root": "snatch",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "snatch"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_snowballing",
+      "lang": "en",
+      "root": "snowballing",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "snowballing"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sodomize",
+      "lang": "en",
+      "root": "sodomize",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sodomize"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sodomy",
+      "lang": "en",
+      "root": "sodomy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sodomy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_spastic",
+      "lang": "en",
+      "root": "spastic",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "spastic"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_spic",
+      "lang": "en",
+      "root": "spic",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "spic"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_splooge",
+      "lang": "en",
+      "root": "splooge",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "splooge"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_spooge",
+      "lang": "en",
+      "root": "spooge",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "spooge"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_spunk",
+      "lang": "en",
+      "root": "spunk",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "spunk"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_strapon",
+      "lang": "en",
+      "root": "strapon",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "strapon"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_strappado",
+      "lang": "en",
+      "root": "strappado",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "strappado"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_suck",
+      "lang": "en",
+      "root": "suck",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "suck"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_sucks",
+      "lang": "en",
+      "root": "sucks",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "sucks"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_swastika",
+      "lang": "en",
+      "root": "swastika",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "swastika"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_swinger",
+      "lang": "en",
+      "root": "swinger",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "swinger"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_threesome",
+      "lang": "en",
+      "root": "threesome",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "threesome"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_throating",
+      "lang": "en",
+      "root": "throating",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "throating"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_thumbzilla",
+      "lang": "en",
+      "root": "thumbzilla",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "thumbzilla"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_tit",
+      "lang": "en",
+      "root": "tit",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "tit"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_tits",
+      "lang": "en",
+      "root": "tits",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "tits"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_titties",
+      "lang": "en",
+      "root": "titties",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "titties"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_titty",
+      "lang": "en",
+      "root": "titty",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "titty"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_topless",
+      "lang": "en",
+      "root": "topless",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "topless"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_tosser",
+      "lang": "en",
+      "root": "tosser",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "tosser"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_towelhead",
+      "lang": "en",
+      "root": "towelhead",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "towelhead"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_tranny",
+      "lang": "en",
+      "root": "tranny",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "tranny"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_tribadism",
+      "lang": "en",
+      "root": "tribadism",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "tribadism"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_tubgirl",
+      "lang": "en",
+      "root": "tubgirl",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "tubgirl"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_tushy",
+      "lang": "en",
+      "root": "tushy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "tushy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_twat",
+      "lang": "en",
+      "root": "twat",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "twat"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_twink",
+      "lang": "en",
+      "root": "twink",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "twink"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_twinkie",
+      "lang": "en",
+      "root": "twinkie",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "twinkie"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_undressing",
+      "lang": "en",
+      "root": "undressing",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "undressing"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_upskirt",
+      "lang": "en",
+      "root": "upskirt",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "upskirt"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_urophilia",
+      "lang": "en",
+      "root": "urophilia",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "urophilia"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_vagina",
+      "lang": "en",
+      "root": "vagina",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "vagina"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_viagra",
+      "lang": "en",
+      "root": "viagra",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "viagra"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_vibrator",
+      "lang": "en",
+      "root": "vibrator",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "vibrator"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_vorarephilia",
+      "lang": "en",
+      "root": "vorarephilia",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "vorarephilia"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_voyeur",
+      "lang": "en",
+      "root": "voyeur",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "voyeur"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_voyeurweb",
+      "lang": "en",
+      "root": "voyeurweb",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "voyeurweb"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_voyuer",
+      "lang": "en",
+      "root": "voyuer",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "voyuer"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_vulva",
+      "lang": "en",
+      "root": "vulva",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "vulva"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_wank",
+      "lang": "en",
+      "root": "wank",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "wank"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_wetback",
+      "lang": "en",
+      "root": "wetback",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "wetback"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_whore",
+      "lang": "en",
+      "root": "whore",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "whore"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_worldsex",
+      "lang": "en",
+      "root": "worldsex",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "worldsex"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_xxx",
+      "lang": "en",
+      "root": "xxx",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "xxx"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_yaoi",
+      "lang": "en",
+      "root": "yaoi",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "yaoi"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_yiffy",
+      "lang": "en",
+      "root": "yiffy",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "yiffy"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    },
+    {
+      "id": "en_zoophilia",
+      "lang": "en",
+      "root": "zoophilia",
+      "severity": "severe",
+      "category": "profanity",
+      "surfaces": [],
+      "insert_forms": [
+        "zoophilia"
+      ],
+      "exceptions": [],
+      "exact": true,
+      "source": "LDNOOBW (public English profanity list)"
+    }
+  ],
+  "non_profane_insults": [
+    "ақымақ",
+    "сасық",
+    "арсыз",
+    "жынды",
+    "есер",
+    "қоқыс",
+    "құбыжық",
+    "қарақшы",
+    "пұшық"
+  ]
+}
