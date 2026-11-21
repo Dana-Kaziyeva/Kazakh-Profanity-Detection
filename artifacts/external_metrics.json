@@ -1,14 +1,14 @@
 {
   "model": "amandyk/KazakhBERTmulti",
-  "threshold": 0.4,
+  "threshold": 0.3,
   "rows": 530,
   "positives": 0,
   "negatives": 530,
-  "flagged": 4,
-  "false_positive_rate": 0.0075,
+  "flagged": 2,
+  "false_positive_rate": 0.0038,
   "confusion": {
-    "tn": 526,
-    "fp": 4,
+    "tn": 528,
+    "fp": 2,
     "fn": 0,
     "tp": 0
   },
@@ -17,16 +17,16 @@
       "n": 30,
       "flagged": 1,
       "flag_rate": 0.0333,
-      "mean_prob": 0.0242,
-      "max_prob": 0.7046,
+      "mean_prob": 0.024,
+      "max_prob": 0.6774,
       "positives": 0
     },
     "small_kazakh_corpus": {
       "n": 500,
-      "flagged": 3,
-      "flag_rate": 0.006,
-      "mean_prob": 0.0063,
-      "max_prob": 0.9952,
+      "flagged": 1,
+      "flag_rate": 0.002,
+      "mean_prob": 0.0025,
+      "max_prob": 0.8568,
       "positives": 0
     }
   }
