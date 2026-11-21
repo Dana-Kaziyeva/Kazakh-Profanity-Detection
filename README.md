@@ -72,7 +72,7 @@ artifacts/
 
 **Model access.** The trained model is published as a GitHub Release asset:
 **<https://github.com/Dana-Kaziyeva/Kazakh-Profanity-Detection/releases/tag/model-v1.1.0>**
-(zip: `kazakh-profanity-model-v1.1.0.zip`, 580 MB; contains `model.safetensors` 651 MB, tokenizer files,
+(zip: `kazakh-profanity-model-v1.1.0.zip`, 608 MB; contains `model.safetensors` 651 MB, tokenizer files,
 `model_meta.json` with `threshold=0.3`, `max_len=96`).
 This is the model **retrained after the manual label corrections** (§10.1b) — the numbers in §6 and §10.2 come from
 this checkpoint. The earlier release `model-v1.0.0` is kept only for history and is superseded.
@@ -388,7 +388,8 @@ remain the best material for understanding what is hard here — nine of them we
 | ru | 0 | 2,182 | 0.00 % |
 | en | 0 | 472 | 0.00 % |
 
-Long comments: 5.65 % of test texts exceed 96 tokens and are truncated.
+Long comments: 6.46 % of test texts (56 / 867) exceed 96 tokens and are truncated; the longest test comment has
+1,874 tokens and the 95th percentile is 118 tokens.
 
 ### 6.7 Tracing one comment end-to-end (`artifacts/trace_example.txt`)
 
@@ -496,7 +497,7 @@ usernames are stripped before training (§3.5).
 | dedup, near-dups, splits, seed | §3.6 (`split_report.json`, seed 42) |
 | preprocessing fitted on train only | §4 (frozen tokenizer; only deterministic normalisation — nothing fitted) |
 | model choice + justification | §4 |
-| long comments / punctuation / unknown tokens | §4 + §6.6 (truncation 5.65 %, `[UNK]` probe) |
+| long comments / punctuation / unknown tokens | §4 + §6.6 (truncation 6.46 %, `[UNK]` probe) |
 | settings, seed, dependencies recorded | `config.yaml`, `requirements.txt`, `artifacts/training_summary.json` |
 | validation-based selection + threshold | §5 (grid table) + §6.2 (threshold sweep) |
 | trainable model saved / no-retraining inference | GitHub Release `model-v1.1.0` (zip → `artifacts/model/`), §2 + §7 |
