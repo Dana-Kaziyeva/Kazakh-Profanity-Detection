@@ -1,0 +1,142 @@
+{
+  "created": "2026-11-20T18:59:54.143047+00:00",
+  "sources": [
+    {
+      "slug": "kazakh_reviews_2gis",
+      "id": "kkenbbi/kazakh_reviews_2gis",
+      "role": "real Kazakh product/service reviews (sentiment label is discarded)",
+      "license": "no explicit license on the dataset card; doi:10.57967/hf/5587; academic use only",
+      "files": [
+        {
+          "file": "train_0.parquet",
+          "sha256": "176ad82aaf9119aed1ec65f7a7971ffbd9bacab4a9aa9f4ce18e1ccc52730135"
+        }
+      ],
+      "rows": 136,
+      "columns": [
+        "text",
+        "label"
+      ]
+    },
+    {
+      "slug": "kazakh_entertainment",
+      "id": "R3iwan/entertainment-reviews-kazakh",
+      "role": "real Kazakh review text (labels discarded)",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "file": "train_0.parquet",
+          "sha256": "6dcb31e4ba434f3d1ca719e80a6ca69a4fe768680e7f0f0be925ca2f5d9e1b5b"
+        }
+      ],
+      "rows": 1250,
+      "columns": [
+        "text",
+        "category",
+        "sentiment"
+      ]
+    },
+    {
+      "slug": "kazakh_swear_words",
+      "id": "Rustem-Kaimolla/kazakh-swear-words",
+      "role": "Kazakh profanity lexicon seeds (entries re-verified by us)",
+      "license": "MIT",
+      "files": [
+        {
+          "file": "train_0.parquet",
+          "sha256": "c9fcf897486f5d3239194eb3548bd70bc28ff6ac0ce15951934697fcee7e3d1c"
+        }
+      ],
+      "rows": 119,
+      "columns": [
+        "text",
+        "label",
+        "category",
+        "language",
+        "severity"
+      ]
+    },
+    {
+      "slug": "kazakh_names",
+      "id": "R3iwan/kazakh_names",
+      "role": "Kazakh personal names, used only to strip PII",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "file": "train_0.parquet",
+          "sha256": "7d37e8759327de8fe0340c5ae389eaacf92c25deba97db544b3392d2c5d8b33a"
+        }
+      ],
+      "rows": 1000,
+      "columns": [
+        "id",
+        "name"
+      ]
+    },
+    {
+      "slug": "russian_toxic",
+      "id": "Mnwa/russian-toxic",
+      "role": "Russian toxic comments -> relabelled 0 as hard negatives for this task",
+      "license": "MIT",
+      "files": [
+        {
+          "file": "test_0.parquet",
+          "sha256": "f289e7804228afd6c3cb3349c88f95976e4b92a7ac1c81d5d53b1ab357af4cf9"
+        },
+        {
+          "file": "train_0.parquet",
+          "sha256": "31112f979646a2447df1c909255daf013fa6034113737bb22049289e07002d13"
+        }
+      ],
+      "rows": 347527,
+      "columns": [
+        "text",
+        "label"
+      ]
+    },
+    {
+      "slug": "kazakh_telegram",
+      "id": "kurumikz/telegram-corpus-russian-kazakh",
+      "role": "real mixed Kazakh/Russian chat messages - mined for REAL Kazakh profanity",
+      "license": "cc-by-nc-sa-4.0 (academic use)",
+      "files": [
+        {
+          "file": "train_0.parquet",
+          "url": "https://huggingface.co/api/datasets/kurumikz/telegram-corpus-russian-kazakh/parquet/default/train/0.parquet",
+          "sha256": "bf04db5a479b66c32a075e0024138ccc119a3786ab5ffb6f245dcc8ea7178766"
+        }
+      ],
+      "rows": 1493124,
+      "columns": [
+        "text"
+      ]
+    },
+    {
+      "slug": "russian_reviews",
+      "id": "ai-forever/ru-reviews-classification",
+      "role": "real Russian product reviews (clean text pool)",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "file": "test_0.parquet",
+          "sha256": "f646b4eac6406b3252059c295b63c734d2eb836d1536bc81dfc39ab59730bbf9"
+        },
+        {
+          "file": "train_0.parquet",
+          "sha256": "e33852a7fe2ef4230845052d58a11c811fb1b43627165978c2dd52e8c13e5e4c"
+        },
+        {
+          "file": "validation_0.parquet",
+          "sha256": "955a19a65a26ac9a2fc018487399b766fd228cf47bc08de4bc20e9f19c98b9d1"
+        }
+      ],
+      "rows": 75000,
+      "columns": [
+        "text",
+        "label_text",
+        "label",
+        "id"
+      ]
+    }
+  ]
+}
