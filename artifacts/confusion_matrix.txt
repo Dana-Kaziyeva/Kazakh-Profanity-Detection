@@ -1,0 +1,7 @@
+Confusion matrix (rows = true, cols = predicted), threshold=0.4
+                 pred 0    pred 1
+  true 0 (clean)      603        10
+  true 1 (prof.)        1       253
+
+Test examples: 867
+Precision=0.9620 Recall=0.9961 F1=0.9787 F1_macro=0.9848 Accuracy=0.9873

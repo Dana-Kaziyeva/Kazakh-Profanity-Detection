@@ -1,0 +1,150 @@
+{
+  "model": {
+    "base": "amandyk/KazakhBERTmulti",
+    "max_len": 96,
+    "threshold": 0.3,
+    "labels": {
+      "0": "no Kazakh profanity",
+      "1": "Kazakh profanity present"
+    }
+  },
+  "training": {
+    "tag": "final",
+    "base_model": "amandyk/KazakhBERTmulti",
+    "lr": 5e-05,
+    "max_len": 96,
+    "epochs_run": 2,
+    "best_epoch": 2,
+    "best_val_f1": 0.9882352941176471,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.19916734199216163,
+        "precision": 0.9919678714859438,
+        "recall": 0.9686274509803922,
+        "f1": 0.9801587301587301,
+        "f1_macro": 0.9860143244289585,
+        "elapsed_s": 2189.1011171340942
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.016359896511691653,
+        "precision": 0.9882352941176471,
+        "recall": 0.9882352941176471,
+        "f1": 0.9882352941176471,
+        "f1_macro": 0.9916666666666667,
+        "elapsed_s": 3808.6761355400085
+      }
+    ],
+    "train_size": 2439,
+    "val_size": 867,
+    "seed": 42,
+    "batch_size": 16,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "elapsed_min": 65.13246340354284,
+    "saved_to": "C:\\Users\\daka0125\\Visual Studio Projects\\kazakh-profanity-detection\\artifacts\\model"
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.3,
+      "precision": 0.9882352941176471,
+      "recall": 0.9882352941176471,
+      "f1": 0.9882352941176471,
+      "f1_macro": 0.9916666666666667
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.9882352941176471,
+      "recall": 0.9882352941176471,
+      "f1": 0.9882352941176471,
+      "f1_macro": 0.9916666666666667
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.9882352941176471,
+      "recall": 0.9882352941176471,
+      "f1": 0.9882352941176471,
+      "f1_macro": 0.9916666666666667
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.9882352941176471,
+      "recall": 0.9882352941176471,
+      "f1": 0.9882352941176471,
+      "f1_macro": 0.9916666666666667
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.9882352941176471,
+      "recall": 0.9882352941176471,
+      "f1": 0.9882352941176471,
+      "f1_macro": 0.9916666666666667
+    }
+  ],
+  "chosen_threshold": {
+    "threshold": 0.3,
+    "precision": 0.9882352941176471,
+    "recall": 0.9882352941176471,
+    "f1": 0.9882352941176471,
+    "f1_macro": 0.9916666666666667
+  },
+  "config": {
+    "seed": 42,
+    "paths": {
+      "data_raw": "data/raw",
+      "data_processed": "data/processed",
+      "artifacts": "artifacts",
+      "model_dir": "artifacts/model",
+      "lexicon": "data/lexicon.json"
+    },
+    "data": {
+      "splits": {
+        "train": 0.7,
+        "val": 0.15,
+        "test": 0.15
+      },
+      "synthetic": {
+        "positives": 1400,
+        "negatives": 1200,
+        "hard_negatives_ru": 500,
+        "hard_negatives_en": 300
+      },
+      "max_hard_negatives": 1200,
+      "max_russian_reviews": 1000,
+      "max_kazakh_reviews": 4000,
+      "ru_scan_rows": 30000,
+      "max_telegram_positives": 700,
+      "max_telegram_negatives": 700,
+      "max_train_rows": 2500
+    },
+    "model": {
+      "base": "amandyk/KazakhBERTmulti",
+      "fallback_base": "distilbert-base-multilingual-cased",
+      "max_len": 96,
+      "batch_size": 16,
+      "epochs": 2,
+      "lr": 2e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.06,
+      "threshold": 0.5
+    },
+    "grid": {
+      "lr": [
+        2e-05,
+        5e-05
+      ],
+      "max_len": [
+        64,
+        96
+      ]
+    },
+    "threshold_grid": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
+    ]
+  }
+}

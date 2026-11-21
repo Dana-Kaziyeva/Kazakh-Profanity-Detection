@@ -1,0 +1,33 @@
+{
+  "model": "amandyk/KazakhBERTmulti",
+  "threshold": 0.4,
+  "rows": 530,
+  "positives": 0,
+  "negatives": 530,
+  "flagged": 4,
+  "false_positive_rate": 0.0075,
+  "confusion": {
+    "tn": 526,
+    "fp": 4,
+    "fn": 0,
+    "tp": 0
+  },
+  "by_source": {
+    "mangi_sentiment": {
+      "n": 30,
+      "flagged": 1,
+      "flag_rate": 0.0333,
+      "mean_prob": 0.0242,
+      "max_prob": 0.7046,
+      "positives": 0
+    },
+    "small_kazakh_corpus": {
+      "n": 500,
+      "flagged": 3,
+      "flag_rate": 0.006,
+      "mean_prob": 0.0063,
+      "max_prob": 0.9952,
+      "positives": 0
+    }
+  }
+}

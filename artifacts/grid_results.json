@@ -1,0 +1,110 @@
+[
+  {
+    "tag": "grid_lr5e-05_len96",
+    "base_model": "amandyk/KazakhBERTmulti",
+    "lr": 5e-05,
+    "max_len": 96,
+    "epochs_run": 1,
+    "best_epoch": 1,
+    "best_val_f1": 0.8631578947368421,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.3435553998500109,
+        "precision": 0.9276018099547512,
+        "recall": 0.8070866141732284,
+        "f1": 0.8631578947368421,
+        "f1_macro": 0.9057648091634964,
+        "elapsed_s": 558.9678664207458
+      }
+    ],
+    "train_size": 800,
+    "val_size": 867,
+    "seed": 42,
+    "batch_size": 16,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "elapsed_min": 11.060624754428863
+  },
+  {
+    "tag": "grid_lr5e-05_len64",
+    "base_model": "amandyk/KazakhBERTmulti",
+    "lr": 5e-05,
+    "max_len": 64,
+    "epochs_run": 1,
+    "best_epoch": 1,
+    "best_val_f1": 0.859538784067086,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.35732707172632217,
+        "precision": 0.9192825112107623,
+        "recall": 0.8070866141732284,
+        "f1": 0.859538784067086,
+        "f1_macro": 0.9031186362658421,
+        "elapsed_s": 472.39589834213257
+      }
+    ],
+    "train_size": 800,
+    "val_size": 867,
+    "seed": 42,
+    "batch_size": 16,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "elapsed_min": 9.002651949723562
+  },
+  {
+    "tag": "grid_lr2e-05_len64",
+    "base_model": "amandyk/KazakhBERTmulti",
+    "lr": 2e-05,
+    "max_len": 64,
+    "epochs_run": 1,
+    "best_epoch": 1,
+    "best_val_f1": 0.7695238095238095,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.44581447333097457,
+        "precision": 0.7453874538745388,
+        "recall": 0.7952755905511811,
+        "f1": 0.7695238095238095,
+        "f1_macro": 0.8347205482689354,
+        "elapsed_s": 463.95497035980225
+      }
+    ],
+    "train_size": 800,
+    "val_size": 867,
+    "seed": 42,
+    "batch_size": 16,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "elapsed_min": 8.861023553212483
+  },
+  {
+    "tag": "grid_lr2e-05_len96",
+    "base_model": "amandyk/KazakhBERTmulti",
+    "lr": 2e-05,
+    "max_len": 96,
+    "epochs_run": 1,
+    "best_epoch": 1,
+    "best_val_f1": 0.7665369649805448,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.4398703241348267,
+        "precision": 0.7576923076923077,
+        "recall": 0.7755905511811023,
+        "f1": 0.7665369649805448,
+        "f1_macro": 0.8340881546214199,
+        "elapsed_s": 591.3572683334351
+      }
+    ],
+    "train_size": 800,
+    "val_size": 867,
+    "seed": 42,
+    "batch_size": 16,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "elapsed_min": 11.312315118312835
+  }
+]
