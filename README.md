@@ -68,6 +68,8 @@ artifacts/
   trace_example.txt          end-to-end tokenisation trace
   external_metrics.json      external evaluation summary (FPR on never-trained-on data)
   external_predictions.csv    every external row with P(profanity)
+presentation/
+  Kazakh_Profanity_Detection.pptx   presentation deck (dataset / solution / model / experiments / metrics)
 ```
 
 **Model access.** The trained model is published as a GitHub Release asset:
