@@ -1,0 +1,50 @@
+# Global configuration for the Kazakh profanity classifier.
+# Every script reads this file; all randomness derives from `seed`.
+
+seed: 42
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  artifacts: artifacts
+  model_dir: artifacts/model
+  lexicon: data/lexicon.json
+
+data:
+  splits:            # fractions of the deduplicated, grouped dataset
+    train: 0.70
+    val: 0.15
+    test: 0.15
+  # near-duplicate groups use an order/punctuation-insensitive token-set
+  # signature; whole groups are kept inside one split.
+  synthetic:         # generated rows (all flagged synthetic=True)
+    positives: 1400
+    negatives: 1200
+    hard_negatives_ru: 500
+    hard_negatives_en: 300
+  max_hard_negatives: 1200   # real Russian toxic rows verified to contain RU profanity
+  max_russian_reviews: 1000  # real clean Russian reviews
+  max_kazakh_reviews: 4000   # real Kazakh reviews (random subsample if larger)
+  ru_scan_rows: 30000        # rows of the Russian toxic corpus scanned for profanity
+  max_telegram_positives: 700  # real Kazakh messages mined from the Telegram corpus
+  max_telegram_negatives: 700  # clean Kazakh chat messages (same domain, no profanity)
+  max_train_rows: 2500       # final stage: class-balanced training subsample (CPU budget)
+
+model:
+  base: amandyk/KazakhBERTmulti           # Kazakh BERT-base (fill-mask checkpoint, encoder reused)
+  fallback_base: distilbert-base-multilingual-cased
+  max_len: 96
+  batch_size: 16
+  epochs: 2
+  lr: 2.0e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  threshold: 0.5        # decision threshold for P(profanity); tuned on validation
+
+# Validation-time search space (kept deliberately small: CPU-only training)
+grid:
+  lr: [2.0e-5, 5.0e-5]
+  max_len: [64, 96]
+
+# Threshold sweep applied to the best validation run
+threshold_grid: [0.3, 0.4, 0.5, 0.6, 0.7]
