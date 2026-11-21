@@ -1,12 +1,1 @@
 ﻿id,text,label,lang,source,synthetic,template_id,lexicon_hits,match_modes,profanity_langs,prob_profanity,prediction,correct,margin
-r000041,Масқара чикендері адам жей алмайды қап қатты ақшасына тұрамайды алмаңыздар ұялмайсыңдарма қанша ақша аласыңдар осыған,0,kk,2gis_reviews,False,,,,none,0.626207,1,0,0.226207
-r000471,"Качество ткани приемлемое. Но как сшито ужас. Просто взяли две половины и сшили по бокам, а горизонтальные полоски (синие и красные) сзади и спереди не совпадают и на разных уровнях. Хотя на картинке в магазине показано что они сшиты ровно. Сами строчки на рукавах кривые. Если бы знал, что так сшито не заказывал бы. The quality of the fabric is acceptable. But how stitched horror. Just took the two halves and sewed on the sides and horizontal stripes (blue and red) front and rear are not the same and at different levels. Although the picture in the store shows that they are stitched evenly. Themselves stitching on the sleeves curves. If I knew it was sewn would have not ordered.",1,mixed,ru_reviews,False,,"en_butt,kk_boq",plain,"en,kk",0.000386,0,0,0.399614
-r005224,"суши ш***а, сапасы нашар.",0,ru,synthetic,True,hard_neg_ru_profanity_in_kk_frame,,,none,0.91493,1,0,0.51493
-r002735,Әркімінң өз ажалы бар екендігін білдің бе,0,kk,telegram_clean,False,,,,none,0.970654,1,0,0.570654
-r005165,"Сапасы заалупа, қайта келмеймін.",0,kk,synthetic,True,hard_neg_ru_profanity_in_kk_frame,ru_zalup,plain,ru,0.983665,1,0,0.583665
-r005092,"Сапасы м***к, қайта келмеймін.",0,kk,synthetic,True,hard_neg_ru_profanity_in_kk_frame,,,none,0.991341,1,0,0.591341
-r005079,"донер заалупа екен, ақшамды қайтарыңдар.",0,kk,synthetic,True,hard_neg_ru_profanity_in_kk_frame,ru_zalup,plain,ru,0.99314,1,0,0.59314
-r000006,Бүгін алғаш келдім !! Тамақғы өтте дәмді келіңіздер осы жерге,0,kk,2gis_reviews,False,,,,none,0.997072,1,0,0.597072
-r002920,Шешенды сыгем,0,ru,swear_words_phrases,False,,kk_sig,plain,kk,0.999247,1,0,0.599247
-r002919,Шешенды амын сыгем,0,ru,swear_words_phrases,False,,"kk_am,kk_sig",plain,kk,0.999853,1,0,0.599853
-r002918,Шешен амын сыгейн,0,ru,swear_words_phrases,False,,"kk_am,kk_sig",plain,kk,0.999854,1,0,0.599854

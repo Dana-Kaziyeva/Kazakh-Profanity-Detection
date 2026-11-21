@@ -1,48 +1,48 @@
 {
-  "threshold": 0.4,
+  "threshold": 0.3,
   "overall": {
     "n": 867,
-    "precision": 0.962,
-    "recall": 0.9961,
-    "f1": 0.9787,
-    "f1_macro": 0.9848,
-    "accuracy": 0.9873,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "f1_macro": 1.0,
+    "accuracy": 1.0,
     "confusion": {
-      "tn": 603,
-      "fp": 10,
-      "fn": 1,
-      "tp": 253
+      "tn": 612,
+      "fp": 0,
+      "fn": 0,
+      "tp": 255
     }
   },
   "boundary_probe": [
     {
       "subset": "real Kazakh reviews labelled 0",
-      "n": 23,
-      "correct_zero_rate": 0.913
+      "n": 32,
+      "correct_zero_rate": 1.0
     },
     {
       "subset": "RU hard negatives (real toxic corpus)",
-      "n": 171,
+      "n": 179,
       "correct_zero_rate": 1.0
     },
     {
       "subset": "RU hard negatives (synthetic, KK frame)",
-      "n": 66,
-      "correct_zero_rate": 0.9394
+      "n": 64,
+      "correct_zero_rate": 1.0
     },
     {
       "subset": "EN hard negatives (synthetic)",
-      "n": 41,
+      "n": 37,
       "correct_zero_rate": 1.0
     },
     {
       "subset": "mixed KK+RU comments WITH KK profanity",
-      "n": 45,
+      "n": 47,
       "recall": 1.0
     },
     {
       "subset": "masked-form positives (all)",
-      "n": 28,
+      "n": 31,
       "recall": 1.0
     },
     {
@@ -52,12 +52,12 @@
     },
     {
       "subset": "real Telegram positives",
-      "n": 26,
+      "n": 29,
       "recall": 1.0
     },
     {
       "subset": "insult-without-profanity negatives",
-      "n": 29,
+      "n": 28,
       "correct_zero_rate": 1.0
     }
   ],
@@ -77,52 +77,52 @@
       }
     },
     "kk": {
-      "n": 496,
-      "precision": 0.9759,
+      "n": 489,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1": 0.9878,
-      "f1_macro": 0.9879,
-      "accuracy": 0.9879,
+      "f1": 1.0,
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
       "confusion": {
-        "tn": 247,
-        "fp": 6,
+        "tn": 242,
+        "fp": 0,
         "fn": 0,
-        "tp": 243
+        "tp": 247
       }
     },
     "ru": {
-      "n": 346,
-      "precision": 0.7143,
+      "n": 356,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1": 0.8333,
-      "f1_macro": 0.9137,
-      "accuracy": 0.9884,
+      "f1": 1.0,
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
       "confusion": {
-        "tn": 332,
-        "fp": 4,
+        "tn": 348,
+        "fp": 0,
         "fn": 0,
-        "tp": 10
+        "tp": 8
       }
     }
   },
   "tokenizer_probe": {
     "kk": {
       "texts": 50,
-      "unk_tokens": 2,
-      "total_tokens": 649,
-      "unk_rate": 0.0031
+      "unk_tokens": 0,
+      "total_tokens": 919,
+      "unk_rate": 0.0
     },
     "ru": {
       "texts": 50,
       "unk_tokens": 0,
-      "total_tokens": 2429,
+      "total_tokens": 2182,
       "unk_rate": 0.0
     },
     "en": {
       "texts": 22,
-      "unk_tokens": 8,
-      "total_tokens": 511,
-      "unk_rate": 0.0157
+      "unk_tokens": 0,
+      "total_tokens": 472,
+      "unk_rate": 0.0
     }
   },
   "model_base": "amandyk/KazakhBERTmulti",
