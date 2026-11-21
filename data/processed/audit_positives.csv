@@ -1,0 +1,216 @@
+﻿id,text,label,lang,source,synthetic,template_id,lexicon_hits,match_modes,profanity_langs,group,split
+r002383,"коммент ашылыпты, админды сігейік жабылып пока есть шанс",1,kk,telegram_pos,False,,kk_sig,plain,kk,админды ашылыпты есть жабылып коммент пока сігейік шанс,train
+r002384,Жеме тасақты,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,жеме тасақты,train
+r002385,"Оданда білім танып, мұхтандың көтін сігу керек",1,kk,telegram_pos,False,,"kk_kot,kk_sig,kk_sik",plain,kk,білім керек көтін мұхтандың оданда сігу танып,train
+r002386,"Қотағым жеме, арабқұл)",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,арабқұл жеме қотағым,train
+r002387,"Қазақша ""қотақбас"" сөзінен басқа не білесіңдер?😌",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,басқа білесіңдер не сөзінен қазақша қотақбас,train
+r002388,Қотақбас ому,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,ому қотақбас,train
+r002389,Мамалатып көтін айыратын,1,kk,telegram_pos,False,,kk_kot,plain,kk,айыратын көтін мамалатып,train
+r002390,Қотаққаралы деген жерде,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,деген жерде қотаққаралы,train
+r002391,Э сігілш қотағм жемей далбаеб,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",далбаеб жемей сігілш э қотағм,train
+r002392,Ойбай сікпеші,1,kk,telegram_pos,False,,kk_sik,plain,kk,ойбай сікпеші,train
+r002393,"Досың бірге бір онымен шығып, көті айырылып кетсе, жан-жаққа тарап кетесіндер ме?",1,kk,telegram_pos,False,,kk_kot,plain,kk,айырылып бір бірге досың жан жаққа кетесіндер кетсе көті ме онымен тарап шығып,train
+r002394,"Жалпы, ұлы далаға социализымның амбасодоры болып орыстар келді ғой",1,kk,telegram_pos,False,,kk_ambas,plain,kk,амбасодоры болып далаға жалпы келді орыстар социализымның ғой ұлы,train
+r002395,Әкеннің аузын сігейін,1,kk,telegram_pos,False,,kk_sig,plain,kk,аузын сігейін әкеннің,test
+r002396,амынды шығарам ғо,1,kk,telegram_pos,False,,kk_am,plain,kk,амынды шығарам ғо,train
+r002397,көтіне қарама,1,kk,telegram_pos,False,,kk_kot,plain,kk,көтіне қарама,val
+r002398,Нау мал болмағанда қотағымда ала алмайтын едік,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,ала алмайтын болмағанда едік мал нау қотағымда,train
+r002399,сігілше орыс заебал,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",заебал орыс сігілше,train
+r002400,ИИ кейде сіге салады,1,kk,telegram_pos,False,,kk_sig,plain,kk,ии кейде салады сіге,train
+r002401,Макс Холлоуей утылгасын настр түстіғо шшс,1,kk,telegram_pos,False,,kk_shshs,plain,kk,макс настр түстіғо утылгасын холлоуей шшс,val
+r002402,Сенің көтінді арабтар сіккілегені туралы,1,kk,telegram_pos,False,,"kk_kot,kk_sik",plain,kk,арабтар көтінді сенің сіккілегені туралы,train
+r002403,Көтіңді айырамыз ғой,1,kk,telegram_pos,False,,kk_kot,plain,kk,айырамыз көтіңді ғой,train
+r002404,Қотақбас жігіт болсаң жауап берсей,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,берсей болсаң жауап жігіт қотақбас,train
+r002405,Алшындардан ең әлсіз мүгедектің көтін айырасын,1,kk,telegram_pos,False,,kk_kot,plain,kk,айырасын алшындардан ең көтін мүгедектің әлсіз,val
+r002406,Тәжіктердң сігіп,1,kk,telegram_pos,False,,kk_sig,plain,kk,сігіп тәжіктердң,train
+r002407,"Кезінде аталарым комунякаларды сігіндірген, менде сігем",1,kk,telegram_pos,False,,kk_sig,plain,kk,аталарым кезінде комунякаларды менде сігем сігіндірген,test
+r002408,"Бисмарк : Маған 5000 қазақ жігітін беріндер, сол кезде менде ең таза қотақ болады",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,5000 беріндер бисмарк болады ең жігітін кезде маған менде сол таза қазақ қотақ,train
+r002409,"Қотағымның ұшы, шыңдық емес",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,емес шыңдық қотағымның ұшы,train
+r002410,–Сігілш қотағм жемей далбаеб,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",далбаеб жемей сігілш қотағм,test
+r002411,Орыстардың қотақтарыңа жабысып кетті ғо,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жабысып кетті орыстардың ғо қотақтарыңа,train
+r002412,Далбаеб сігілш,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",далбаеб сігілш,train
+r002413,"сука я мен алаштың ұрпағымын, красныйларды сігу керек",1,kk,telegram_pos,False,,"kk_sig,kk_sik,ru_suk",plain,"kk,ru",алаштың керек красныйларды мен сука сігу я ұрпағымын,train
+r002414,Деп сіге салайын,1,kk,telegram_pos,False,,kk_sig,plain,kk,деп салайын сіге,test
+r002415,Сігіл мусорный жәшік ұқсамай,1,kk,telegram_pos,False,,kk_sig,plain,kk,жәшік мусорный сігіл ұқсамай,val
+r002416,кете қотағым жемей,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жемей кете қотағым,train
+r002417,Тышқанның көтін айырып жүр,1,kk,telegram_pos,False,,kk_kot,plain,kk,айырып жүр көтін тышқанның,val
+r002418,Ал сендер жүріндер екі аяқ пен қолмен алақаңдарынды сігіндіріп,1,kk,telegram_pos,False,,kk_sig,plain,kk,ал алақаңдарынды аяқ екі жүріндер пен сендер сігіндіріп қолмен,val
+r002419,Жеті аталарын сігейн қотақабстар,1,kk,telegram_pos,False,,"kk_kotaq,kk_sig",plain,kk,аталарын жеті сігейн қотақабстар,train
+r002420,Сігіс боватр,1,kk,telegram_pos,False,,kk_sig,plain,kk,боватр сігіс,test
+r002421,Сігіп аламын,1,kk,telegram_pos,False,,kk_sig,plain,kk,аламын сігіп,train
+r002422,Потом қытайға кетіп қазақтар мен ұйғырлар қытайларды сігті.,1,kk,telegram_pos,False,,kk_sig,plain,kk,кетіп мен потом сігті қазақтар қытайларды қытайға ұйғырлар,train
+r002423,Қотақ қырғыздар,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,қотақ қырғыздар,train
+r002424,Көтіңді тасқа еге,1,kk,telegram_pos,False,,kk_kot,plain,kk,еге көтіңді тасқа,train
+r002425,мәнгүрт қотақ жеп қалд,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жеп мәнгүрт қалд қотақ,train
+r002426,Қотағымды жемеші орыс,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жемеші орыс қотағымды,train
+r002427,Бәрің қотаққа кеттіңдер,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,бәрің кеттіңдер қотаққа,train
+r002428,Е болды қотақ жемеңдерш,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,болды е жемеңдерш қотақ,val
+r002429,Қотағыма дәлелдеу керекпін,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,дәлелдеу керекпін қотағыма,val
+r002430,А как же “әкеннің аузын сігейін!!!” от своего же бати,1,kk,telegram_pos,False,,kk_sig,plain,kk,а аузын бати же как от своего сігейін әкеннің,train
+r002431,Сіге алса әлі,1,kk,telegram_pos,False,,kk_sig,plain,kk,алса сіге әлі,train
+r002432,"Бесіншіден, ҚР Қарулы Күштерін шарттық түрге айналдыратын едім. Міндетті түрдегі әскерлік қызмет ету қотақ жеген әңгіме.",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,айналдыратын бесіншіден едім ету жеген күштерін міндетті түрге түрдегі шарттық қарулы қотақ қр қызмет әскерлік әңгіме,train
+r002433,"Бұл брат [ИМЯ], сенің көтіңді айрат",1,kk,telegram_pos,False,,kk_kot,plain,kk,айрат брат бұл имя көтіңді сенің,test
+r002434,"Шешең амы бот екенсің, жазбашы",1,kk,telegram_pos,False,,kk_am,plain,kk,амы бот екенсің жазбашы шешең,train
+r002435,Көт астында және бас үстінде ештеңе болмаса сенде қатын да болмайды,1,kk,telegram_pos,False,,kk_kot,plain,kk,астында бас болмайды болмаса да ештеңе және көт сенде қатын үстінде,train
+r002436,Сен бля қотақ жемеш,1,kk,telegram_pos,False,,"kk_kotaq,ru_blyad",plain,"kk,ru",бля жемеш сен қотақ,val
+r002437,сколько у тебя жүн на көте?,1,kk,telegram_pos,False,,kk_kot,plain,kk,жүн көте на сколько тебя у,train
+r002438,сігіл школьница,1,kk,telegram_pos,False,,kk_sig,plain,kk,сігіл школьница,train
+r002439,Қотаққа кеттің,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,кеттің қотаққа,train
+r002441,Сосын талқандалған елдерге кредит беріп байимыз шшс,1,kk,telegram_pos,False,,kk_shshs,plain,kk,байимыз беріп елдерге кредит сосын талқандалған шшс,train
+r002442,Сігісу үшін балаларын аязға да қуып жіберетіндер бар ғой,1,kk,telegram_pos,False,,kk_sig,plain,kk,аязға балаларын бар да жіберетіндер сігісу ғой қуып үшін,train
+r002443,Қайдасың эй щещең амы мал?,1,kk,telegram_pos,False,,kk_am,plain,kk,амы мал щещең эй қайдасың,train
+r002444,Болды тасақ гум,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,болды гум тасақ,test
+r002445,"тозақта 100 шайтан көтіңді сіксін,әумин🙏🏿",1,kk,telegram_pos,False,,"kk_kot,kk_sik",plain,kk,100 көтіңді сіксін тозақта шайтан әумин,train
+r002446,сіге ма сені,1,kk,telegram_pos,False,,kk_sig,plain,kk,ма сені сіге,train
+r002447,Менде қотақпен әрқашан қиын болған,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,болған менде қиын қотақпен әрқашан,train
+r002448,"Мал қотақ амшық гей, наху",1,kk,telegram_pos,False,,"kk_am,kk_amshyq,kk_kotaq",plain,kk,амшық гей мал наху қотақ,train
+r002449,"Бля, мынау Микола қотақбас мазганы сікті уже скамить етіп",1,kk,telegram_pos,False,,"kk_kotaq,kk_sik,ru_blyad",plain,"kk,ru",бля етіп мазганы микола мынау скамить сікті уже қотақбас,train
+r002450,кетшей қотағымды шайнамай,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,кетшей шайнамай қотағымды,train
+r002451,Қотақ бастар,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,бастар қотақ,train
+r002452,Ата бабаларынды сігейін,1,kk,telegram_pos,False,,kk_sig,plain,kk,ата бабаларынды сігейін,test
+r002453,Кеше екі шошқаның көтін айырғам,1,kk,telegram_pos,False,,kk_kot,plain,kk,айырғам екі кеше көтін шошқаның,train
+r002454,сігілші родны,1,kk,telegram_pos,False,,kk_sig,plain,kk,родны сігілші,test
+r002455,Қазақ тілдің болғаны қандай керемет енелерін тасағымда центрифугадағыдай айналдырайын,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,айналдырайын болғаны енелерін керемет тасағымда тілдің центрифугадағыдай қазақ қандай,train
+r002456,Э няғып қалмақ деп тұрсын қотақбас,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,деп няғып тұрсын э қалмақ қотақбас,val
+r002457,Бля қотағыма қалалық сайысты жеңіп алдым,1,kk,telegram_pos,False,,"kk_kotaq,ru_blyad",plain,"kk,ru",алдым бля жеңіп сайысты қалалық қотағыма,train
+r002458,Көп қотақ жей бермеші,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,бермеші жей көп қотақ,val
+r002459,Эй щещең амы сасық мырқ,1,kk,telegram_pos,False,,kk_am,plain,kk,амы мырқ сасық щещең эй,train
+r002460,сіккен әнгіме,1,kk,telegram_pos,False,,kk_sik,plain,kk,сіккен әнгіме,val
+r002461,"Перепутал со-своей , это у вас там, вонючих мырков видимо так принято. Амыңа қарап сөйле щещең амы мал.",1,kk,telegram_pos,False,,kk_am,plain,kk,амы амыңа вас видимо вонючих мал мырков перепутал принято своей со сөйле так там у щещең это қарап,val
+r002462,"Қазақ тілін оқығысы келмесе оқымасын, біз не қотақ жейміз оларға",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,біз жейміз келмесе не оларға оқымасын оқығысы тілін қазақ қотақ,train
+r002463,Испанша сөйле шшс,1,kk,telegram_pos,False,,kk_shshs,plain,kk,испанша сөйле шшс,test
+r002464,Менің көтім баһ,1,kk,telegram_pos,False,,kk_kot,plain,kk,баһ көтім менің,train
+r002465,Бір апта тасағымды ұстамағам,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,апта бір тасағымды ұстамағам,train
+r002466,Жантас тасағымды сора бермеші,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,бермеші жантас сора тасағымды,train
+r002467,"Ажырасқаннан кейін қатындардың амын сваркілеп тастау керек, сол кезде қорықпай алимент төлей бересің👍",1,kk,telegram_pos,False,,kk_am,plain,kk,ажырасқаннан алимент амын бересің кезде кейін керек сваркілеп сол тастау төлей қатындардың қорықпай,train
+r002468,Қотақ жеген әңгімені қоя ғой,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жеген ғой қотақ қоя әңгімені,val
+r002469,Нені сіксе де,1,kk,telegram_pos,False,,kk_sik,plain,kk,де нені сіксе,test
+r002470,Ам жіберші Алла разы болсын саған,1,kk,telegram_pos,False,,kk_am,plain,kk,алла ам болсын жіберші разы саған,train
+r002471,"Қотағыма орысқұлмын, маңқа?)",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,маңқа орысқұлмын қотағыма,train
+r002472,Блять мынау не наху қай тіл анассігейн қотақбастар ай,1,kk,telegram_pos,False,,"kk_kotaq,ru_blyad",plain,"kk,ru",ай анассігейн блять мынау наху не тіл қай қотақбастар,train
+r002473,Сігемін көтінді,1,kk,telegram_pos,False,,"kk_kot,kk_sig",plain,kk,көтінді сігемін,val
+r002474,Амынды шығарамын брат,1,kk,telegram_pos,False,,kk_am,plain,kk,амынды брат шығарамын,val
+r002475,"Хотя казалось бы - окружён арабами, вроде көтіңді қысып тыныш отыр, но они побеждают в войне против соседей",1,kk,telegram_pos,False,,kk_kot,plain,kk,арабами бы в войне вроде казалось көтіңді но окружён они отыр побеждают против соседей тыныш хотя қысып,val
+r002476,Исламистердін көтін аиырып тұрмын,1,kk,telegram_pos,False,,kk_kot,plain,kk,аиырып исламистердін көтін тұрмын,test
+r002477,Не қотағымды жеп тұрсын,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жеп не тұрсын қотағымды,train
+r002478,Ей сен қотақ оданда қазақша үйренш,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,ей оданда сен қазақша қотақ үйренш,train
+r002479,"Ал панятя бойынша досынның көті айырылып бара жатса, араласуға бола ма?",1,kk,telegram_pos,False,,kk_kot,plain,kk,айырылып ал араласуға бара бойынша бола досынның жатса көті ма панятя,train
+r002480,Я більше не сігма?,1,kk,telegram_pos,False,,kk_sig,plain,kk,більше не сігма я,val
+r002481,Қотақ жеген әңгіме деп айт оған,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,айт деп жеген оған қотақ әңгіме,train
+r002482,"Ал мен сізді жоқ, өйткені маған Байден ата ұнайды, сіз орычтардың көтун жалай бересіз",1,kk,telegram_pos,False,,kk_kot,plain,kk,ал ата байден бересіз жалай жоқ көтун маған мен орычтардың сіз сізді ұнайды өйткені,test
+r002483,Көбірек енелерін сігейін,1,kk,telegram_pos,False,,kk_sig,plain,kk,енелерін көбірек сігейін,train
+r002484,Надо было ответить Сігілш қотағм жемей далбаеб,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",было далбаеб жемей надо ответить сігілш қотағм,test
+r002485,"Қотақтарың тұрмай қалса ауыр, ия?",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,ауыр ия тұрмай қалса қотақтарың,train
+r002486,Бастысы қотақ аман болсын🔥☝🏻,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,аман бастысы болсын қотақ,val
+r002487,"Орыстарды жәй сігіп қуу керек қазақ жерінен, орыстарды жақтасаң орыстың құлысың деген сөз",1,kk,telegram_pos,False,,kk_sig,plain,kk,деген жақтасаң жерінен жәй керек орыстарды орыстың сігіп сөз қазақ қуу құлысың,train
+r002488,қотаққа кетш,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,кетш қотаққа,train
+r002489,аллах пидарас оны уже 1000 шайтан сігіп жатыра машаллах☝️☝️☝️🖕,1,kk,telegram_pos,False,,"kk_sig,ru_pidor",plain,"kk,ru",1000 аллах жатыра машаллах оны пидарас сігіп уже шайтан,train
+r002490,"Бірінші сігем, сосын айырамын",1,kk,telegram_pos,False,,kk_sig,plain,kk,айырамын бірінші сосын сігем,train
+r002491,"Қотағым жемей отш, қатын.",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жемей отш қатын қотағым,train
+r002492,англия - ам ғалия,1,kk,telegram_pos,False,,kk_am,plain,kk,ам англия ғалия,train
+r002493,Бірақ негізі қотақ жеген әңгіме,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,бірақ жеген негізі қотақ әңгіме,train
+r002494,Америка - ам ерiк ә,1,kk,telegram_pos,False,,kk_am,plain,kk,ам америка ерiк ә,test
+r002495,"Кезінде ата бабаларымыз барлығын сігіп, сігіліп жүрді ғой",1,kk,telegram_pos,False,,kk_sig,plain,kk,ата бабаларымыз барлығын жүрді кезінде сігіліп сігіп ғой,train
+r002496,Одан гөрі көтің сігіп алған сияқты,1,kk,telegram_pos,False,,"kk_kot,kk_sig",plain,kk,алған гөрі көтің одан сияқты сігіп,train
+r002497,Сіге салдын ғой,1,kk,telegram_pos,False,,kk_sig,plain,kk,салдын сіге ғой,train
+r002498,Арабтарды сігу үшін Израиль туының астында ойнайсын ГОЙ,1,kk,telegram_pos,False,,"kk_sig,kk_sik",plain,kk,арабтарды астында гой израиль ойнайсын сігу туының үшін,train
+r002499,Мухтар тауып алып көтін айыр пидараздың,1,kk,telegram_pos,False,,"kk_kot,ru_pidor",plain,"kk,ru",айыр алып көтін мухтар пидараздың тауып,train
+r002500,Бір мужик тасбақаны сігіп жатқан,1,kk,telegram_pos,False,,kk_sig,plain,kk,бір жатқан мужик сігіп тасбақаны,train
+r002501,Өйткені сен қотақбассың :3,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,3 сен қотақбассың өйткені,train
+r002502,Сігіліндерш қотағмды жемей далбаебтар,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",далбаебтар жемей сігіліндерш қотағмды,train
+r002503,Көті дәу кемпірлерге де қарамадым,1,kk,telegram_pos,False,,kk_kot,plain,kk,де дәу кемпірлерге көті қарамадым,train
+r002504,"Толық шешініп, ең кереметін жасырып қойды ғой тасақ",1,kk,telegram_pos,False,,kk_tasaq,plain,kk,ең жасырып кереметін тасақ толық шешініп ғой қойды,train
+r002505,Шешенамын сігкйін бауырынмен қалай сөйлесіп жатырсын,1,kk,telegram_pos,False,,kk_sig,plain,kk,бауырынмен жатырсын сігкйін сөйлесіп шешенамын қалай,train
+r002506,Аманбектің қотағы,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,аманбектің қотағы,test
+r002507,Бізге тиіссей шешен амы,1,kk,telegram_pos,False,,kk_am,plain,kk,амы бізге тиіссей шешен,train
+r002508,Неліктен біздің отандық антиисламистер сондай тасақтар,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,антиисламистер біздің неліктен отандық сондай тасақтар,train
+r002509,Қарағандыға келіп кетіп көтінді айырамын сучка,1,kk,telegram_pos,False,,kk_kot,plain,kk,айырамын келіп кетіп көтінді сучка қарағандыға,train
+r002510,Қотақбас палпатинец,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,палпатинец қотақбас,train
+r002511,Сігілш қотағм жемей далбаеб,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",далбаеб жемей сігілш қотағм,test
+r002512,малганис котакбас по разам сігем стратхольмге кел,1,kk,telegram_pos,False,,kk_sig,plain,kk,кел котакбас малганис по разам стратхольмге сігем,train
+r002513,Қотақта ғой мектеп,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,мектеп ғой қотақта,train
+r002514,Мен қыста қалай сігілгенімді білесін ба,1,kk,telegram_pos,False,,kk_sig,plain,kk,ба білесін мен сігілгенімді қалай қыста,test
+r002515,Көтімді тігіп тастадым щщс,1,kk,telegram_pos,False,,kk_kot,plain,kk,көтімді тастадым тігіп щщс,train
+r002516,Қотақ жейсің онда,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жейсің онда қотақ,train
+r002517,Бека шешеміз жәлеп,1,kk,telegram_pos,False,,kk_zhalep,plain,kk,бека жәлеп шешеміз,train
+r002518,Гейларды сік!,1,kk,telegram_pos,False,,kk_sik,plain,kk,гейларды сік,train
+r002519,"Қазақстанда өмір сүреміз, әкенің ауызы сігейн 👍🏻",1,kk,telegram_pos,False,,kk_sig,plain,kk,ауызы сігейн сүреміз қазақстанда әкенің өмір,train
+r002520,Сені жеті рет сігіп алдым,1,kk,telegram_pos,False,,kk_sig,plain,kk,алдым жеті рет сені сігіп,train
+r002521,Қотағым жемеш,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жемеш қотағым,test
+r002522,Щещен амы қгтақ,1,kk,telegram_pos,False,,kk_am,plain,kk,амы щещен қгтақ,train
+r002523,Садрадин сасаққа заява жазған қотақ емес па?,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,емес жазған заява па садрадин сасаққа қотақ,val
+r002524,Мемлекет мүлігінің амың шығардым,1,kk,telegram_pos,False,,kk_am,plain,kk,амың мемлекет мүлігінің шығардым,train
+r002525,қотағыма [ИМЯ] сырға,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,имя сырға қотағыма,test
+r002526,Амынды шығарам,1,kk,telegram_pos,False,,kk_am,plain,kk,амынды шығарам,train
+r002528,Нееет всьо лож и клевета ващеее у нас в Костанае никогда человеку бошку автобусом не переезжало и тут все добрые вы чооооооо ээээ лееее сігілш қотағм жемей далбаеб,1,kk,telegram_pos,False,,"kk_sig,ru_eb",plain,"kk,ru",автобусом бошку в ващеее все всьо вы далбаеб добрые жемей и клевета костанае лееее лож нас не нееет никогда переезжало сігілш тут у человеку чооооооо ээээ қотағм,train
+r002529,Көтім қалай Жантасһ,1,kk,telegram_pos,False,,kk_kot,plain,kk,жантасһ көтім қалай,val
+r002530,Блә хамстер койынға сенгендердің ауыздарын сігейін,1,kk,telegram_pos,False,,kk_sig,plain,kk,ауыздарын блә койынға сенгендердің сігейін хамстер,test
+r002531,Ебать арабтарды сікті ғой,1,kk,telegram_pos,False,,"kk_sik,ru_eb",plain,"kk,ru",арабтарды ебать сікті ғой,test
+r002532,Тасағын қайда,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,тасағын қайда,test
+r002533,Еуразиялық климатты сігейін,1,kk,telegram_pos,False,,kk_sig,plain,kk,еуразиялық климатты сігейін,train
+r002534,Сенің жәлеп щещене тиіспедім ғой,1,kk,telegram_pos,False,,kk_zhalep,plain,kk,жәлеп сенің тиіспедім щещене ғой,train
+r002535,Урустарды сігу керек,1,kk,telegram_pos,False,,"kk_sig,kk_sik",plain,kk,керек сігу урустарды,val
+r002536,Қотақ қойдым,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,қойдым қотақ,train
+r002537,Айдын көтімізді айырсын,1,kk,telegram_pos,False,,kk_kot,plain,kk,айдын айырсын көтімізді,train
+r002539,Орыс жәлептерді бұл қашан тоқтатты?,1,kk,telegram_pos,False,,kk_zhalep,plain,kk,бұл жәлептерді орыс тоқтатты қашан,test
+r002540,вывод сігілу керек қазақстаннан,1,kk,telegram_pos,False,,kk_sig,plain,kk,вывод керек сігілу қазақстаннан,train
+r002541,Арабтар сігілгенде күн бірден жақсарып кетеді,1,kk,telegram_pos,False,,kk_sig,plain,kk,арабтар бірден жақсарып кетеді күн сігілгенде,train
+r002542,Мен кішкене сікпей қалдым қайда кіргенімді,1,kk,telegram_pos,False,,kk_sik,plain,kk,кіргенімді кішкене мен сікпей қайда қалдым,train
+r002543,Ескі фото шығар ам,1,kk,telegram_pos,False,,kk_am,plain,kk,ам ескі фото шығар,train
+r002544,Кетсен сігем,1,kk,telegram_pos,False,,kk_sig,plain,kk,кетсен сігем,train
+r002545,Көтін тесілген жоқ па әлі ?,1,kk,telegram_pos,False,,kk_kot,plain,kk,жоқ көтін па тесілген әлі,train
+r002546,"Қотақты жемесейш, орыстың қотағын сорып қалған неме",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жемесейш неме орыстың сорып қалған қотағын қотақты,train
+r002547,"Просто сендер сол жаңа жылда ""казашкалар"" әр біреуге көтің беріп жүрген кезде намыстарын оянбайды қызық. Ал қазақ қызы мектепке орамалмен барса нервыларын раковый клеткаға дейін жетіп қозады.",1,kk,telegram_pos,False,,kk_kot,plain,kk,ал барса беріп біреуге дейін жаңа жетіп жылда жүрген казашкалар кезде клеткаға көтің мектепке намыстарын нервыларын орамалмен оянбайды просто раковый сендер сол қазақ қозады қызы қызық әр,train
+r002548,Қотақ қасымда отыратын сыныптасым,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,отыратын сыныптасым қасымда қотақ,val
+r002549,Қотақ жеме әнәң,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жеме қотақ әнәң,train
+r002550,Э қотақбастар,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,э қотақбастар,test
+r002551,көтінді қысшы заебал,1,kk,telegram_pos,False,,"kk_kot,ru_eb",plain,"kk,ru",заебал көтінді қысшы,val
+r002552,Суворов тасақ,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,суворов тасақ,train
+r002553,Қотақбассыз ба,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,ба қотақбассыз,train
+r002554,Бұл жерде қотақ соратын балдар бар ма?,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,балдар бар бұл жерде ма соратын қотақ,train
+r002555,Жантастың амы,1,kk,telegram_pos,False,,kk_am,plain,kk,амы жантастың,val
+r002556,Көтке кірді ғой ол көке,1,kk,telegram_pos,False,,kk_kot,plain,kk,кірді көке көтке ол ғой,train
+r002557,Оданда мені сігіндер,1,kk,telegram_pos,False,,kk_sig,plain,kk,мені оданда сігіндер,train
+r002558,Бля ебать мектепте отырмын және көтіммен сұйық массаны ұстап тұрмын ғой,1,kk,telegram_pos,False,,"kk_kot,ru_blyad,ru_eb",plain,"kk,ru",бля ебать және көтіммен массаны мектепте отырмын сұйық тұрмын ғой ұстап,test
+r002559,“Менің көтімді сігіп алындаршы” деп өздерінің байттарымен,1,kk,telegram_pos,False,,"kk_kot,kk_sig",plain,kk,алындаршы байттарымен деп көтімді менің сігіп өздерінің,train
+r002560,Қотағыиды жей бермей,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,бермей жей қотағыиды,val
+r002561,Ол тасақ сорғыщ,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,ол сорғыщ тасақ,train
+r002562,"Латын жазуы әдемі, бірақ қотаққа керек",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,бірақ жазуы керек латын қотаққа әдемі,train
+r002563,"Қотағыма жеме, орысқұл",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жеме орысқұл қотағыма,train
+r002564,Ескі телефонның амы шықты,1,kk,telegram_pos,False,,kk_am,plain,kk,амы ескі телефонның шықты,test
+r002565,Сігісуге дайынсың ба,1,kk,telegram_pos,False,,kk_sig,plain,kk,ба дайынсың сігісуге,train
+r002566,Ам жалаңдар шешеңнің амдары,1,kk,telegram_pos,False,,kk_am,plain,kk,ам амдары жалаңдар шешеңнің,train
+r002567,Тасақ үйден шықпайтыр,1,kk,telegram_pos,False,,kk_tasaq,plain,kk,тасақ шықпайтыр үйден,train
+r002568,Көтінді айырамын,1,kk,telegram_pos,False,,kk_kot,plain,kk,айырамын көтінді,train
+r002569,"Мне это напонимает ""Қотақстан""",1,kk,telegram_pos,False,,kk_kotaq,plain,kk,мне напонимает это қотақстан,train
+r002570,Болсам ең бірінші сені сігем ғой,1,kk,telegram_pos,False,,kk_sig,plain,kk,болсам бірінші ең сені сігем ғой,val
+r002571,Енді түсінікті шығар амшық,1,kk,telegram_pos,False,,"kk_am,kk_amshyq",plain,kk,амшық енді түсінікті шығар,test
+r002572,Қотағымды жемеші,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,жемеші қотағымды,train
+r002573,"Билігіміз орыстарға көт жалай берсін, бірақ қазақ халқы әрқашан осыны есте сақтайды",1,kk,telegram_pos,False,,kk_kot,plain,kk,берсін билігіміз бірақ есте жалай көт орыстарға осыны сақтайды халқы қазақ әрқашан,train
+r002574,менің қотағыма де,1,kk,telegram_pos,False,,kk_kotaq,plain,kk,де менің қотағыма,test
+r002634,"Көтім ойнап, бірден шығып кеттім",1,kk,telegram_clean,False,,kk_kot,plain,kk,бірден кеттім көтім ойнап шығып,train
+r002906,Акеннын аузын сыгем,1,ru,swear_words_phrases,False,,kk_sig,plain,kk,акеннын аузын сыгем,train
+r002907,Бок же,1,ru,swear_words_phrases,False,,kk_boq,plain,kk,бок же,train
+r002908,Котинды айрам,1,ru,swear_words_phrases,False,,kk_kot,plain,kk,айрам котинды,train
+r002909,Котинды кыс,1,ru,swear_words_phrases,False,,kk_kot,plain,kk,котинды кыс,train
+r002910,Котын кышып тур ма,1,ru,swear_words_phrases,False,,kk_kot,plain,kk,котын кышып ма тур,train
+r002911,Котын сыгейн,1,ru,swear_words_phrases,False,,"kk_kot,kk_sig",plain,kk,котын сыгейн,val
+r002912,Көтің сігейін,1,kk,swear_words_phrases,False,,"kk_kot,kk_sig",plain,kk,көтің сігейін,train
+r002913,Көтің қышып тұр ма,1,kk,swear_words_phrases,False,,kk_kot,plain,kk,көтің ма тұр қышып,val
+r002914,Көтіңді айырамын,1,kk,swear_words_phrases,False,,kk_kot,plain,kk,айырамын көтіңді,val
+r002915,Көтіңді қыс,1,kk,swear_words_phrases,False,,kk_kot,plain,kk,көтіңді қыс,train
+r002916,Сыктыр бар,1,ru,swear_words_phrases,False,,kk_sik,plain,kk,бар сыктыр,train
+r002917,Сіктір бар,1,kk,swear_words_phrases,False,,kk_sik,plain,kk,бар сіктір,train
+r002918,Шешен амын сыгейн,1,ru,swear_words_phrases,False,,"kk_am,kk_sig",plain,kk,амын сыгейн шешен,train
+r002919,Шешенды амын сыгем,1,ru,swear_words_phrases,False,,"kk_am,kk_sig",plain,kk,амын сыгем шешенды,train
+r002920,Шешенды сыгем,1,ru,swear_words_phrases,False,,kk_sig,plain,kk,сыгем шешенды,train
+r002921,Шешең амын сігейін,1,kk,swear_words_phrases,False,,"kk_am,kk_sig",plain,kk,амын сігейін шешең,val
+r002922,Шешеңді сігейін,1,kk,swear_words_phrases,False,,kk_sig,plain,kk,сігейін шешеңді,train
+r002923,Шешеңнің амын сігейім,1,kk,swear_words_phrases,False,,"kk_am,kk_sig",plain,kk,амын сігейім шешеңнің,test
+r002924,шешенді сігейін,1,kk,swear_words_phrases,False,,kk_sig,plain,kk,сігейін шешенді,val
+r002925,Қотағыма қарайсың?,1,kk,swear_words_phrases,False,,kk_kotaq,plain,kk,қарайсың қотағыма,train
+r002926,Қотағымды жеме,1,kk,swear_words_phrases,False,,kk_kotaq,plain,kk,жеме қотағымды,train
+r002927,Қотақ жеме,1,kk,swear_words_phrases,False,,kk_kotaq,plain,kk,жеме қотақ,train
+r002928,қотақ же,1,kk,swear_words_phrases,False,,kk_kotaq,plain,kk,же қотақ,val
+r002929,қотақ пас,1,kk,swear_words_phrases,False,,kk_kotaq,plain,kk,пас қотақ,train
+r002930,Әкеңнің аузын сігейім,1,kk,swear_words_phrases,False,,kk_sig,plain,kk,аузын сігейім әкеңнің,train

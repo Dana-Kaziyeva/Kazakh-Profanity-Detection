@@ -1,0 +1,80 @@
+{
+  "seed": 42,
+  "total_rows": 5777,
+  "class_distribution": {
+    "0": 4078,
+    "1": 1699
+  },
+  "synthetic_share": 0.49264324043621255,
+  "splits": {
+    "train": {
+      "rows": 4043,
+      "positives": 1189,
+      "pos_rate": 0.2940885481078407
+    },
+    "val": {
+      "rows": 867,
+      "positives": 255,
+      "pos_rate": 0.29411764705882354
+    },
+    "test": {
+      "rows": 867,
+      "positives": 255,
+      "pos_rate": 0.29411764705882354
+    }
+  },
+  "language_distribution": {
+    "kk": 3258,
+    "ru": 2345,
+    "en": 165,
+    "mixed": 7,
+    "other": 2
+  },
+  "source_distribution": {
+    "synthetic": 2846,
+    "ru_toxic": 1197,
+    "ru_reviews": 1000,
+    "telegram_clean": 331,
+    "telegram_pos": 192,
+    "2gis_reviews": 136,
+    "entertainment_reviews": 50,
+    "swear_words_phrases": 25
+  },
+  "unique_near_dup_groups": 5768,
+  "largest_group": 3,
+  "raw_stats": {
+    "sources": {
+      "2gis_reviews": {
+        "rows_loaded": 136,
+        "rows_kept_text": 136
+      },
+      "entertainment_reviews": {
+        "rows_loaded": 1250,
+        "rows_kept_text": 1250
+      },
+      "ru_reviews": {
+        "rows_loaded": 1000,
+        "rows_kept_text": 1000
+      },
+      "ru_toxic": {
+        "rows_loaded": 347527,
+        "rows_scanned": 30000,
+        "rows_kept": 1200
+      },
+      "telegram_pos": {
+        "rows_kept": 192
+      },
+      "telegram_clean": {
+        "rows_kept": 700
+      },
+      "swear_words_phrases": {
+        "rows_kept": 25
+      }
+    },
+    "pii": {
+      "substitutions": 538,
+      "rows_still_with_pii": 0
+    },
+    "exact_duplicates_removed": 1572
+  }
+}

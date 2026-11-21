@@ -1,0 +1,26 @@
+{
+  "rows_total": 5777,
+  "rows_flagged": 2115,
+  "rows_actionable": 94,
+  "by_reason": {
+    "HARD_NEGATIVE": 1850,
+    "WEAK_MASKED_MATCH": 190,
+    "KK_MATCH_IN_RU_TEXT": 58,
+    "AMBIGUOUS_SHORT_ROOT": 42,
+    "RULE_ZERO_DESPITE_KK": 25,
+    "MODEL_SAYS_PROFANE": 9,
+    "MODEL_SAYS_CLEAN": 5,
+    "PROPER_NOUN": 3
+  },
+  "by_review_type": {
+    "ambiguous": 53,
+    "systematic_lang_rule": 27,
+    "label_fix": 9,
+    "model_boundary": 5
+  },
+  "by_suggested_label": {
+    "1.0": 15,
+    "0.0": 5
+  },
+  "model_threshold": 0.4
+}
