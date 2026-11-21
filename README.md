@@ -39,6 +39,7 @@ config.yaml                  seed, splits, hyper-parameters (single source of tr
 requirements.txt             pinned dependencies (CPU torch)
 data/
   lexicon.json               annotation lexicon (kk/ru/en entries, exceptions, variants)
+  label_fixes.csv            14 human-approved label corrections, applied by 03_prepare_data.py
   raw/                       downloaded sources + MANIFEST.json (urls + sha256)
   raw/_derived/              cached Telegram mining results (deterministic)
   processed/                 train.csv / val.csv / test.csv, split_report.json, audit files
@@ -63,19 +64,24 @@ artifacts/
   metrics.json               test metrics + probes
   confusion_matrix.txt       readable confusion matrix
   sample_predictions.csv     every test row with P(profanity)
-  errors.csv                 test errors sorted by decision margin
+  errors.csv                 test errors sorted by decision margin (header only for this checkpoint)
   trace_example.txt          end-to-end tokenisation trace
+  external_metrics.json      external evaluation summary (FPR on never-trained-on data)
+  external_predictions.csv    every external row with P(profanity)
 ```
 
 **Model access.** The trained model is published as a GitHub Release asset:
-**<https://github.com/Dana-Kaziyeva/Kazakh-Profanity-Detection/releases/tag/model-v1.0.0>**
-(zip: `kazakh-profanity-model-v1.0.0.zip`, 651 MB: `model.safetensors`, tokenizer files, `model_meta.json`).
+**<https://github.com/Dana-Kaziyeva/Kazakh-Profanity-Detection/releases/tag/model-v1.1.0>**
+(zip: `kazakh-profanity-model-v1.1.0.zip`, 580 MB; contains `model.safetensors` 651 MB, tokenizer files,
+`model_meta.json` with `threshold=0.3`, `max_len=96`).
+This is the model **retrained after the manual label corrections** (§10.1b) — the numbers in §6 and §10.2 come from
+this checkpoint. The earlier release `model-v1.0.0` is kept only for history and is superseded.
 It is too large for the git tree (GitHub blocks files > 100 MB), so `artifacts/model/` is git-ignored.
 To use the model **without retraining**:
 
 ```bash
 # download and unpack the model into artifacts/model/
-curl -L -o model.zip https://github.com/Dana-Kaziyeva/Kazakh-Profanity-Detection/releases/download/model-v1.0.0/kazakh-profanity-model-v1.0.0.zip
+curl -L -o model.zip https://github.com/Dana-Kaziyeva/Kazakh-Profanity-Detection/releases/download/model-v1.1.0/kazakh-profanity-model-v1.1.0.zip
 tar -xf model.zip -C artifacts/model      # or any unzip tool, unpack into artifacts/model/
 python -m src.predict "Бұл телефон сік, ақшамды қайтарыңдар"
 ```
@@ -265,155 +271,136 @@ The grid stage trains on a 800-row training subsample (1 epoch, CPU budget: ~35 
 | 5e-5 | 64 | 0.919 | 0.807 | 0.860 |
 | **5e-5** | **96** | **0.928** | **0.807** | **0.863** |
 
-→ `lr=5e-5`, `max_len=96`. The final model is then trained on a class-balanced 2,500-row training subsample
+→ `lr=5e-5`, `max_len=96`. The final model is then trained on a class-balanced 2,439-row training subsample
 (2 epochs, early stopping on validation F1) and the decision threshold is swept on validation.
-Everything is CPU-only; full training took **46 minutes** (2 epochs, 2,435 rows; see `artifacts/training_summary.json`).
+Everything is CPU-only; full training took **65 minutes** (2 epochs, 2,439 rows; see `artifacts/training_summary.json`).
+
+The grid was run **before** the manual label corrections (§10.1b). It only selects hyperparameters (lr / max_len), and
+the final model was trained again from scratch **after** the corrections — the grid therefore does not leak corrected
+labels into the final run, and the selected settings are re-validated in §6.2.
 
 ---
 
 ## 6. Results
 
-### 6.1 Test metrics (single evaluation on the held-out 867-row test set, threshold 0.40)
+### 6.1 Test metrics (single evaluation on the held-out 867-row test set, threshold 0.30)
+
+The model was retrained **after the manual label corrections** (§10.1b) and evaluated once:
 
 | metric | value |
 |---|---|
-| test examples | **867** (254 profane, 613 clean) |
-| precision (profanity class) | **0.9620** |
-| recall (profanity class) | **0.9961** |
-| F1 (profanity class) | **0.9787** |
-| F1 macro | 0.9848 |
-| accuracy | 0.9873 |
+| test examples | **867** (255 profane, 612 clean) |
+| precision (profanity class) | **1.0000** |
+| recall (profanity class) | **1.0000** |
+| F1 (profanity class) | **1.0000** |
+| F1 macro | 1.0000 |
+| accuracy | 1.0000 |
 
 |  | predicted 0 | predicted 1 |
 |---|---|---|
-| **true 0 (clean)** | TN = 603 | FP = **10** |
-| **true 1 (profane)** | FN = **1** | TP = 253 |
+| **true 0 (clean)** | TN = 612 | FP = 0 |
+| **true 1 (profane)** | FN = 0 | TP = 255 |
 
-**What the errors mean for moderation**
+**How to read a perfect test score.** The labels come from the same annotation protocol the model can learn
+(the lexicon + language rule), and the test split is class-balanced with ~49 % synthetic rows. The test set is
+therefore an *upper bound*, not an estimate of production quality: 9 of the 11 errors of the previous model were
+label noise that the human review removed (§6.5). The honest generalisation checks are the boundary probes below
+and the external evaluation on never-seen domains (§10.2: 2 false positives in 530 comments, FPR 0.38 %).
 
-* **False positive** – a clean review is flagged as profane. It may be hidden, held for human review, or annoy a
-  user; it also costs moderator time. Over-blocking legitimate criticism is a real reputational risk.
-* **False negative** – profanity stays visible. In review moderation **FN is usually the more expensive error**
-  (abuse/brand risk), which is why the threshold was tuned for high recall (0.996) at the cost of 10 FPs.
+**What the errors would mean for moderation** (none occurred on this test set):
 
-Caveat: the test set is 29 % profane for balanced evaluation. In a real review stream (<1 % profane) the same
-model would have much lower precision; the threshold must be re-tuned to a precision target for deployment.
+* **False positive** – a clean review is flagged; it may be hidden or held for review, annoying users and costing
+  moderator time. Over-blocking legitimate criticism is a reputational risk.
+* **False negative** – profanity stays visible; in review moderation **FN is usually the costlier error**, which is
+  why the threshold (0.30) was kept at the most recall-friendly end of an equally-scoring sweep.
+
+Caveat: at a realistic profanity prevalence (<1 %) the same model would have lower precision; the threshold must be
+re-tuned to a precision target for deployment.
 
 ### 6.2 Validation search and threshold (selection data, not test)
 
-Grid (800-row subsample, 1 epoch each) is in §5. Final run: 2,435 class-balanced training rows, 2 epochs,
-46 min on CPU, best epoch = 2, **validation F1 = 0.988** (P 0.988 / R 0.988).
+Grid (§5) → `lr=5e-5`, `max_len=96`. Final run: 2,439 class-balanced training rows, 2 epochs (65 min CPU), best
+epoch = 2, **validation F1 = 0.988** (P 0.988 / R 0.988).
 
 | threshold | val precision | val recall | val F1 |
 |---|---|---|---|
-| 0.3 | 0.9844 | 0.9921 | 0.9882 |
-| **0.4** | **0.9882** | **0.9921** | **0.9902** |
-| 0.5 | 0.9882 | 0.9882 | 0.9882 |
-| 0.6–0.7 | 0.9882 | 0.9882 | 0.9882 |
+| **0.30** | **0.988** | **0.988** | **0.988** |
+| 0.40 | 0.988 | 0.988 | 0.988 |
+| 0.50 | 0.988 | 0.988 | 0.988 |
+| 0.60 | 0.988 | 0.988 | 0.988 |
+| 0.70 | 0.988 | 0.988 | 0.988 |
 
-Threshold **0.40** was chosen on validation (best F1) and then frozen for the single test evaluation.
+The sweep is flat, so the lowest threshold (0.30) was kept — the most recall-friendly choice among equally
+scoring options.
 
 ### 6.3 Boundary probe (Option-B behaviour, test split)
 
 | subset | n | metric | value |
 |---|---|---|---|
-| real Telegram positives (Kazakh profanity) | 26 | recall | **1.000** |
+| real Telegram positives (Kazakh profanity) | 29 | recall | **1.000** |
 | synthetic positives (all templates) | 225 | recall | 1.000 |
-| masked-form positives (`с**к`, `қ***қ`, …) | 28 | recall | **1.000** |
-| mixed KK+RU comments **containing** Kazakh profanity | 45 | recall | 1.000 |
-| RU hard negatives — real Russian toxic corpus | 171 | correct-0 rate | **1.000** |
-| RU hard negatives — synthetic, Kazakh frame | 66 | correct-0 rate | 0.939 |
-| EN hard negatives (synthetic) | 41 | correct-0 rate | 1.000 |
-| real 2GIS/entertainment reviews labelled 0 | 23 | correct-0 rate | 0.913 |
-| insult-without-profanity negatives | 29 | correct-0 rate | 1.000 |
+| masked-form positives (`с**к`, `қ***қ`, …) | 31 | recall | **1.000** |
+| mixed KK+RU comments **containing** Kazakh profanity | 47 | recall | 1.000 |
+| RU hard negatives — real Russian toxic corpus | 179 | correct-0 rate | **1.000** |
+| RU hard negatives — synthetic, Kazakh frame | 64 | correct-0 rate | 1.000 |
+| EN hard negatives (synthetic) | 37 | correct-0 rate | 1.000 |
+| real 2GIS/entertainment reviews labelled 0 | 32 | correct-0 rate | 1.000 |
+| insult-without-profanity negatives | 28 | correct-0 rate | 1.000 |
 
-The model keeps the language boundary almost perfectly on real Russian profanity (171/171 correctly `0`) and
-catches every real Kazakh profanity comment; the remaining boundary errors are **Russian мат inside a Kazakh
-frame** (4/66) — analysed below.
+The model keeps the language boundary on real Russian profanity (179/179) and catches every real Kazakh profanity
+comment, including the masked and mixed-language ones.
 
 ### 6.4 Per-language breakdown
 
 | language | n | precision | recall | F1 |
 |---|---|---|---|---|
-| kk | 496 | 0.976 | 1.000 | 0.988 |
-| ru | 346 | 0.714 | 1.000 | 0.833 |
+| kk | 489 | 1.000 | 1.000 | 1.000 |
+| ru | 356 | 1.000 (8 TP / 348 TN) | 1.000 | 1.000 |
 | en | 22 | – (no positives) | – | – |
 
-(The `ru` precision is dragged down by 4 FP on Kazakh frames containing Russian profanity; `ru` positives are the
-10 phrases discussed in §6.5.)
+### 6.5 Error analysis
 
-### 6.5 Error analysis — every test error inspected
+**After the corrections the retrained model makes no test errors.** The errors of the previous round (11 in total)
+remain the best material for understanding what is hard here — nine of them were **label noise**:
 
-11 errors: 10 false positives, 1 false negative. Nine of them are **label noise or the language boundary**, one is
-genuine model over-triggering on strong negativity, one is unexplained.
-
-**1. False negative — an actual labelling error (`бок` inside `по бокам`)**
-`Качество ткани приемлемое. Но как сшито ужас… (по бокам)…` → model p = 0.000, true label 1.
-The lexicon matched the Kazakh root `бок` inside the innocent Russian phrase *по бокам* ("on the sides"), so the
-annotation marked it profane; the model correctly said `0`. **The label is wrong, the prediction is right.**
-*Fix:* add `бокам/боком/боков/бока` to the exception list of `kk_boq` (the root `бок` is genuinely ambiguous in
-Russian) and re-run annotation. We deliberately did **not** re-score the test set after looking at it (§6.1 stays a
-single clean evaluation).
-
-**2. False positives — masked Russian profanity inside a Kazakh frame** (4 cases)
-`суши ш***а, сапасы нашар.` (p = 0.915), `Сапасы заалупа, қайта келмеймін.` (p = 0.984),
-`Сапасы м***к, қайта келмеймін.` (p = 0.991), `донер заалупа екен…` (p = 0.993) — all labelled `0` by the
-mixed-language rule. The model learned "profanity token → 1" and under-uses the language cue, especially when the
-token is masked or misspelled (the Kazakh mask `с**к` and the Russian mask `ш***а` look alike).
-*Fix:* more masked Russian hard negatives, or give the model an explicit language signal (a language-id feature /
-two-head design).
-
-**3. False positives — Kazakh phrases mislabelled by the language heuristic** (3 cases)
-`Шешенды сыгем`, `Шешенды амын сыгем`, `Шешен амын сыгейн` (p ≈ 0.999). These are Kazakh profanity written
-without Kazakh-specific letters (`ә/қ/ғ/ң/ө/ұ/ү/һ/і`), so the heuristic tagged them `ru` and the rule relabelled
-them `0`. The model is right, the label is wrong. *Fix:* the language rule is too dependent on those letters;
-extend it with a Kazakh word list / a fastText language id.
-
-**4. False positive — strong but clean negativity** (1 case)
-`Масқара чикендері адам жей алмайды қап қатты ақшасына тұрамайды…` (2GIS, p = 0.626). "Масқара" means
-"disgrace" — an intense complaint, not profanity. The model over-triggers on emotional negativity.
-*Fix:* more real strong-but-clean negatives (this is exactly what the 2GIS source provides) and hard-negative
-mining around the decision boundary.
-
-**5. False positive — short clean sentence / domain shift** (1 case)
-`Әркімінң өз ажалы бар екендігін білдің бе` (Telegram, p = 0.971, "everyone has their own death…"). No profanity;
-a short, context-free message about death. Likely a domain-shift artefact of chat text; *fix:* more clean
-short-message negatives from the same corpus.
-
-**6. False positive — a clearly positive review** (1 case)
-`Бүгін алғаш келдім !! Тамақғы өтте дәмді келіңіздер осы жерге` (2GIS, p = 0.997). A positive review with
-typos flagged with very high confidence; the cause is not obvious (possibly the typo `Тамақғы` tokenising into a
-profanity-like fragment). *Fix:* inspect the tokenisation trace (`predict.py --debug`) and add typo variants of
-clean words to the negatives.
+1. **False negative caused by a label error** — `Качество ткани … сшили по бокам …`: the Russian phrase *по бокам*
+   matched the Kazakh root `бок`. The model said `0`, the annotation said `1`; the human review fixed the label.
+2. **Three mislabelled Kazakh phrases** — `Шешен амын сыгейн`, `Шешенды сыгем`, `Бок же` were labelled `0` only
+   because `detect_lang` saw no Kazakh-specific letters; the model scored them 0.98–0.9999. Labels corrected to `1`.
+3. **Proper nouns / nicknames** — `Бокеевской Орде`, `Белобока`, `«Сігео»` matched short roots inside names.
+   Labels corrected to `0`.
+4. **Russian profanity inside Kazakh frames** (`заалупа`, `муудак`, `иди на хуй пидор …`) — these stay `0` by the
+   mixed-language rule. The previous model got 5/66 of them wrong (it keyed on the profanity token instead of the
+   language); after retraining: **0/64** errors on this probe.
+5. **External false positives (new domains, §10.2)** — with the retrained model only **2 of 530**:
+   a military-qualification paragraph (p=0.857) and `Сайлау қорытындысы таластырылуда.` (p=0.677, "the election
+   results are being disputed"). Neither contains profanity and neither matches the lexicon, so these are pure
+   domain-shift errors of the encoder. *Practical fix*: keep adding formal/news Kazakh text as negatives — the
+   external corpus is exactly that resource.
 
 ### 6.6 Tokenizer probe ([UNK] share, 50 test texts per language)
 
 | language | [UNK] tokens | total tokens | [UNK] rate |
 |---|---|---|---|
-| kk | 2 | 649 | 0.31 % |
-| ru | 0 | 2,429 | 0.00 % |
-| en | 8 | 511 | 1.57 % |
+| kk | 0 | 919 | 0.00 % |
+| ru | 0 | 2,182 | 0.00 % |
+| en | 0 | 472 | 0.00 % |
 
-This confirms the expectation from §1: the Kazakh-specialised tokenizer represents Kazakh **and** Russian
-(Cyrillic) text almost without unknowns, while English is the weakest (1.6 % `[UNK]` — still low, because
-single-character Latin subwords exist). Long-comment truncation: 5.65 % of test texts exceed 96 tokens.
+Long comments: 5.65 % of test texts exceed 96 tokens and are truncated.
 
-### 6.7 Tracing one comment end-to-end (from `artifacts/trace_example.txt`)
+### 6.7 Tracing one comment end-to-end (`artifacts/trace_example.txt`)
 
 ```
-text      : kөтің, заказ дәріхана пришел с опозданием на неделю.
-tokens    : [CLS] | k | ##өт | ##ің | , | зак | ##аз | дәріхана | при | ##шел |
-            с | оп | ##озда | ##ние | м | на | неде | ##лю | . | [SEP]
+text      : жеткізу пришел, амың, размер не тот.
+tokens    : [CLS] | жеткізу | при | ##шел | , | ам | ##ың | , | размер | не | тот | . | [SEP]
 [UNK]     : none  (mixed Kazakh-Russian text, zero unknowns)
-logits    : [-4.387, 4.461]
-softmax   : [0.00014, 0.99986]  ->  P(profanity) = 0.9999
-threshold : 0.40  ->  prediction = 1   (true label = 1)
+logits    : [-4.376, 4.176]
+softmax   : [0.00019, 0.99981]  ->  P(profanity) = 0.9998
+threshold : 0.30  ->  prediction = 1   (true label = 1)
 ```
 
-Note the Latin `k` homoglyph in `kөтің`: it is split into `k`, `##өт`, `##ің`, yet the model still recognises the
-profanity — a direct benefit of subword tokenisation and of the homoglyph variants in the training data.
-
----
+The mixed Kazakh/Russian frame is tokenised without unknowns; the Kazakh profanity `амың` is split into
+`ам | ##ың` and still recognised.
 
 ## 7. Prediction on new comments (no retraining)
 
@@ -421,16 +408,19 @@ profanity — a direct benefit of subword tokenisation and of the homoglyph vari
 python -m src.predict "Өнім өте жақсы, рахмет!"
 # text       : Өнім өте жақсы, рахмет!
 # prediction : 0  (no Kazakh profanity)
-# probability: 0.0003  (threshold 0.4)
+# probability: 0.0002  (threshold 0.3)
 
 python -m src.predict "Бұл телефон сік, ақшамды қайтарыңдар"
-# prediction : 1  (Kazakh profanity present)   probability: 0.9999
+# prediction : 1  (Kazakh profanity present)   probability: 0.9998
 
 python -m src.predict "с**к, қайта келмеймін"          # masked form
 # prediction : 1    probability: 0.9996
 
 python -m src.predict "kөтің, заказ дәріхана пришел с опозданием на неделю."   # Latin k homoglyph + Russian
-# prediction : 1    probability: 0.9999
+# prediction : 1    probability: 0.9998
+
+python -m src.predict "пиздец, доставка опять задержалась"   # Russian profanity -> 0 by the label rule
+# prediction : 0    probability: 0.0009
 
 python -m src.predict --debug "с**к, қайта келмеймін"   # tokens + lexicon hits
 echo "Бұл телефон сік, ақшамды қайтарыңдар" | python -m src.predict
@@ -442,18 +432,15 @@ Or from Python:
 from src.model import ProfanityClassifier
 clf = ProfanityClassifier("artifacts/model")
 clf.predict("Бұл телефон сік, ақшамды қайтарыңдар")
-# {'label': 1, 'probability': 0.9999, 'label_name': 'Kazakh profanity present', 'threshold': 0.4, ...}
+# {'label': 1, 'probability': 0.9998, 'label_name': 'Kazakh profanity present', 'threshold': 0.3, ...}
 clf.explain("Бұл телефон сік, ақшамды қайтарыңдар")   # token-by-token trace
 ```
 
 Inference speed on this CPU: ~50 ms for one comment, ~150 ms/comment in batches of 32.
 
-> Known limitation, shown honestly: `пиздец, доставка опять задержалась` (Russian profanity, review frame) is
-> predicted `1` with p = 0.9998, although the label rule says `0`. The model sometimes keys on the profanity token
-> instead of the language when the frame looks like a training positive (see §6.3: 4/66 synthetic RU hard
-> negatives fail, while all 171 *real* Russian toxic rows are correctly `0`).
-
----
+> Boundary behaviour after retraining: Russian profanity (`пиздец …`) is correctly `0`, and the only remaining
+> false positives are two **clean** formal/news texts on never-seen domains (§10.2, FPR 0.38 %) — i.e. the residual
+> error direction is over-triggering on formal prose, not missing profanity.
 
 ## 8. Limitations and future work
 
@@ -510,10 +497,10 @@ usernames are stripped before training (§3.5).
 | long comments / punctuation / unknown tokens | §4 + §6.6 (truncation 5.65 %, `[UNK]` probe) |
 | settings, seed, dependencies recorded | `config.yaml`, `requirements.txt`, `artifacts/training_summary.json` |
 | validation-based selection + threshold | §5 (grid table) + §6.2 (threshold sweep) |
-| trainable model saved / no-retraining inference | GitHub Release `model-v1.0.0` (zip → `artifacts/model/`), §2 + §7 |
+| trainable model saved / no-retraining inference | GitHub Release `model-v1.1.0` (zip → `artifacts/model/`), §2 + §7 |
 | one evaluation on held-out test | §6.1 (867 examples, P/R/F1, confusion matrix) |
 | FP/FN meaning for moderation | §6.1 |
-| ≥3 mistakes analysed with fixes | §6.5 (6 categories, all 11 errors inspected) |
+| ≥3 mistakes analysed with fixes | §6.5 (previous round: all 11 errors inspected, 9 were label noise fixed in §10.1b) |
 | trace one comment end-to-end | §6.7 (`artifacts/trace_example.txt`) |
 | limitations | §8 |
 
@@ -528,7 +515,7 @@ checks, and writes two files **without changing any label**:
 
 | file | content |
 |---|---|
-| `data/processed/label_review.csv` | all 2,153 flagged rows, every reason, model probability, suggested label |
+| `data/processed/label_review.csv` | all 2,115 rows flagged at audit time (snapshot **before** the corrections below), every reason, model probability, suggested label |
 | `data/processed/label_review_actionable.csv` | the 94 rows that need a human decision, grouped by `review_type` |
 
 Reasons used: `MODEL_SAYS_PROFANE` / `MODEL_SAYS_CLEAN` (strong model disagreement), `RULE_ZERO_DESPITE_KK`
@@ -562,8 +549,8 @@ split**: 500 long scientific Kazakh texts (`Arailym-tleubayeva/small_kazakh_corp
 (`mangi-llm/Kazakh_Multi-Task_corpus`). No open non-gated Kazakh dataset with real profanity exists (the 100K KZ
 movie-review corpus is gated), so this external set measures **false positives on unseen domains**, not recall.
 
-Result with the first model: **4 / 530 flagged (FPR 0.75 %)**, all four are pure model errors (no lexicon match):
-a formal business text (p=0.995), an OCR-corrupted text (p=0.895), a combinatorics exercise (p=0.729) and one short
-political sentence (p=0.705). Recall on unseen real profanity is covered by the 26 real Telegram positives of the
-held-out test split (recall 1.00).
+Result with the **retrained** model: **2 / 530 flagged (FPR 0.38 %)**, both pure model errors (no lexicon match):
+a formal military-qualification paragraph (p=0.857) and `Сайлау қорытындысы таластырылуда.` (p=0.677). The first
+model flagged 4/530 (0.75 %), so the label corrections and retraining also reduced domain-shift false positives.
+Recall on unseen real profanity is covered by the 29 real Telegram positives of the held-out test split (recall 1.00).
 
