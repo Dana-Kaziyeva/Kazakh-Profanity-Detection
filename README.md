@@ -255,6 +255,8 @@ python src/03_prepare_data.py         # -> data/processed/{train,val,test}.csv (
 python src/04_train.py --stage grid   # -> artifacts/grid_results.json
 
 # 3) final model on the full training split (+ threshold sweep on validation)
+#    lr / max_len are taken from artifacts/grid_results.json (lr=5e-5, max_len=96);
+#    the explicit equivalent is: python src/04_train.py --stage final --lr 5e-5 --max-len 96
 python src/04_train.py --stage final  # -> artifacts/model/, artifacts/training_summary.json
 
 # 4) single evaluation on the held-out test set

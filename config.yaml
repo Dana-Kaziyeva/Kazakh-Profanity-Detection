@@ -36,10 +36,10 @@ model:
   max_len: 96
   batch_size: 16
   epochs: 2
-  lr: 2.0e-5
+  lr: 5.0e-5             # grid winner (grid_results.json); fallback if that file is absent
   weight_decay: 0.01
   warmup_ratio: 0.06
-  threshold: 0.5        # decision threshold for P(profanity); tuned on validation
+  threshold: 0.3         # decision threshold for P(profanity); swept on validation by 04_train.py
 
 # Validation-time search space (kept deliberately small: CPU-only training)
 grid:
